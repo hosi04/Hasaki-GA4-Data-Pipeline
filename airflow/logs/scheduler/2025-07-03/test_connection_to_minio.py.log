@@ -2530,3 +2530,17 @@ NameError: name 'task3' is not defined
 [2025-07-03T15:09:48.654+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:09:48.654+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2025-07-03T15:09:48.665+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:09:48.665+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-03 00:00:00+00:00, run_after=2025-07-04 00:00:00+00:00
 [2025-07-03T15:09:48.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.097 seconds
+[2025-07-03T15:10:18.789+0000] {processor.py:161} INFO - Started process (PID=481) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-03T15:10:18.798+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-03T15:10:18.799+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:10:18.799+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-03T15:10:18.840+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-03T15:10:18.860+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:10:18.860+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-03T15:10:18.870+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:10:18.870+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-03 00:00:00+00:00, run_after=2025-07-04 00:00:00+00:00
+[2025-07-03T15:10:18.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.092 seconds
+[2025-07-03T15:10:48.928+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-03T15:10:48.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-03T15:10:48.941+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:10:48.940+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-03T15:10:48.985+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-03T15:10:48.999+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:10:48.999+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-03T15:10:49.012+0000] {logging_mixin.py:188} INFO - [2025-07-03T15:10:49.011+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-03 00:00:00+00:00, run_after=2025-07-04 00:00:00+00:00
+[2025-07-03T15:10:49.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.106 seconds
