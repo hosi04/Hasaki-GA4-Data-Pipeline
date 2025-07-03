@@ -1,0 +1,49 @@
+[2025-07-03T13:26:03.299+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-03T13:26:03.315+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: connect_to_minio.explore_ga4_data manual__2025-07-03T12:48:33.639150+00:00 [queued]>
+[2025-07-03T13:26:03.320+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: connect_to_minio.explore_ga4_data manual__2025-07-03T12:48:33.639150+00:00 [queued]>
+[2025-07-03T13:26:03.320+0000] {taskinstance.py:2303} INFO - Starting attempt 6 of 6
+[2025-07-03T13:26:03.326+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): explore_ga4_data> on 2025-07-03 12:48:33.639150+00:00
+[2025-07-03T13:26:03.331+0000] {standard_task_runner.py:63} INFO - Started process 1538 to run task
+[2025-07-03T13:26:03.333+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'connect_to_minio', 'explore_ga4_data', 'manual__2025-07-03T12:48:33.639150+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/test_connection_to_minio.py', '--cfg-path', '/tmp/tmpb7jywv4d']
+[2025-07-03T13:26:03.335+0000] {standard_task_runner.py:91} INFO - Job 36: Subtask explore_ga4_data
+[2025-07-03T13:26:03.345+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-03T13:26:03.368+0000] {task_command.py:426} INFO - Running <TaskInstance: connect_to_minio.explore_ga4_data manual__2025-07-03T12:48:33.639150+00:00 [running]> on host 8cef375d7ad3
+[2025-07-03T13:26:03.441+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='connect_to_minio' AIRFLOW_CTX_TASK_ID='explore_ga4_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T12:48:33.639150+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-03T12:48:33.639150+00:00'
+[2025-07-03T13:26:03.442+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-03T13:26:03.494+0000] {logging_mixin.py:188} INFO - 
+ EXPLORING: ga4-data/hasakiwork/analytics_253437596/
+[2025-07-03T13:26:03.973+0000] {logging_mixin.py:188} INFO - 
+ SUMMARY:
+[2025-07-03T13:26:03.973+0000] {logging_mixin.py:188} INFO -   Total files: 1906
+[2025-07-03T13:26:03.974+0000] {logging_mixin.py:188} INFO -   Total size: 9991.63 MB
+[2025-07-03T13:26:03.974+0000] {logging_mixin.py:188} INFO -   File types: {'parquet': 1906}
+[2025-07-03T13:26:03.974+0000] {logging_mixin.py:188} INFO - 
+ FILE LIST:
+[2025-07-03T13:26:03.974+0000] {logging_mixin.py:188} INFO - Error exploring GA4 data: string indices must be integers, not 'str'
+[2025-07-03T13:26:03.974+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-03T13:26:03.974+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/test_connection_to_minio.py", line 107, in explore_ga4_data
+    print(f"  {i+1:2d}. {file_info['filename']}")
+                         ~~~~~~~~~^^^^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+[2025-07-03T13:26:03.982+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=connect_to_minio, task_id=explore_ga4_data, execution_date=20250703T124833, start_date=20250703T132603, end_date=20250703T132603
+[2025-07-03T13:26:03.996+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 36 for task explore_ga4_data (string indices must be integers, not 'str'; 1538)
+[2025-07-03T13:26:04.026+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-07-03T13:26:04.040+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-03T13:26:04.042+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

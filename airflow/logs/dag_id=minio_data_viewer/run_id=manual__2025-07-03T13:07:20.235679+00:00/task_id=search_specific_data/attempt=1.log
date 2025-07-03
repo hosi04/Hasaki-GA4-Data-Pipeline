@@ -1,0 +1,53 @@
+[2025-07-03T13:07:50.131+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-03T13:07:50.147+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_data_viewer.search_specific_data manual__2025-07-03T13:07:20.235679+00:00 [queued]>
+[2025-07-03T13:07:50.152+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_data_viewer.search_specific_data manual__2025-07-03T13:07:20.235679+00:00 [queued]>
+[2025-07-03T13:07:50.152+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 1
+[2025-07-03T13:07:50.158+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): search_specific_data> on 2025-07-03 13:07:20.235679+00:00
+[2025-07-03T13:07:50.163+0000] {standard_task_runner.py:63} INFO - Started process 820 to run task
+[2025-07-03T13:07:50.166+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_data_viewer', 'search_specific_data', 'manual__2025-07-03T13:07:20.235679+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/test_connection_to_minio.py', '--cfg-path', '/tmp/tmp0zn355iy']
+[2025-07-03T13:07:50.167+0000] {standard_task_runner.py:91} INFO - Job 12: Subtask search_specific_data
+[2025-07-03T13:07:50.179+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-03T13:07:50.201+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_data_viewer.search_specific_data manual__2025-07-03T13:07:20.235679+00:00 [running]> on host 8cef375d7ad3
+[2025-07-03T13:07:50.253+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_data_viewer' AIRFLOW_CTX_TASK_ID='search_specific_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-03T13:07:20.235679+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-03T13:07:20.235679+00:00'
+[2025-07-03T13:07:50.254+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-03T13:07:50.260+0000] {logging_mixin.py:188} INFO - 🔎 Searching for specific data patterns...
+[2025-07-03T13:07:50.260+0000] {logging_mixin.py:188} INFO - 🔄 Trying endpoint: https://minio-api.vgpu.rdhasaki.com
+[2025-07-03T13:08:03.000+0000] {logging_mixin.py:188} INFO - ❌ Failed with https://minio-api.vgpu.rdhasaki.com: SSL validation failed for https://minio-api.vgpu.rdhasaki.com/ [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1006)
+[2025-07-03T13:08:03.000+0000] {logging_mixin.py:188} INFO - 🔄 Trying endpoint: https://minio.vgpu.rdhasaki.com
+[2025-07-03T13:08:03.063+0000] {logging_mixin.py:188} INFO - ✅ Success with endpoint: https://minio.vgpu.rdhasaki.com
+[2025-07-03T13:08:03.092+0000] {logging_mixin.py:188} INFO - 
+🔍 SEARCH RESULTS:
+[2025-07-03T13:08:03.093+0000] {logging_mixin.py:188} INFO - 
+📋 RECENT FILES: 1906 files
+[2025-07-03T13:08:03.093+0000] {logging_mixin.py:188} INFO -   - 0.parquet (2.85 MB, 2025-04-17 01:22:49)
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO -   - 1.parquet (6.75 MB, 2025-04-17 01:22:49)
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO -   - 10.parquet (5.54 MB, 2025-04-17 01:22:50)
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO -   - 11.parquet (5.07 MB, 2025-04-17 01:22:50)
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO -   - 12.parquet (5.17 MB, 2025-04-17 01:22:51)
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO -   ... and 1901 more files
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO - 
+📋 LARGE FILES: 1583 files
+[2025-07-03T13:08:03.094+0000] {logging_mixin.py:188} INFO -   - 0.parquet (2.85 MB, 2025-04-17 01:22:49)
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO -   - 1.parquet (6.75 MB, 2025-04-17 01:22:49)
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO -   - 10.parquet (5.54 MB, 2025-04-17 01:22:50)
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO -   - 11.parquet (5.07 MB, 2025-04-17 01:22:50)
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO -   - 12.parquet (5.17 MB, 2025-04-17 01:22:51)
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO -   ... and 1578 more files
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO - 
+📋 JSON FILES: 0 files
+[2025-07-03T13:08:03.095+0000] {logging_mixin.py:188} INFO - 
+📋 TODAY FILES: 14 files
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO -   - 23.parquet (1.47 MB, 2025-07-03 00:05:24)
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO -   - 0.parquet (2.06 MB, 2025-07-03 01:05:09)
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO -   - 1.parquet (4.59 MB, 2025-07-03 02:07:09)
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO -   - 10.parquet (6.18 MB, 2025-07-03 11:05:22)
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO -   - 11.parquet (5.31 MB, 2025-07-03 12:05:40)
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO -   ... and 9 more files
+[2025-07-03T13:08:03.096+0000] {logging_mixin.py:188} INFO - 
+✅ Search completed
+[2025-07-03T13:08:03.097+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-03T13:08:03.098+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-03T13:08:03.103+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=minio_data_viewer, task_id=search_specific_data, execution_date=20250703T130720, start_date=20250703T130750, end_date=20250703T130803
+[2025-07-03T13:08:03.156+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-03T13:08:03.166+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-03T13:08:03.167+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
