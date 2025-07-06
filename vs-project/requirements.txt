@@ -1,7 +1,7 @@
-# airflow core và provider
-apache-airflow==2.9.0
-apache-airflow-providers-docker
-apache-airflow-providers-ssh
+# requirements.txt
+pyspark
+
+apache-airflow-providers-common-compat==1.2.2
+apache-airflow-providers-apache-spark==4.11.3
 
 
-boto3

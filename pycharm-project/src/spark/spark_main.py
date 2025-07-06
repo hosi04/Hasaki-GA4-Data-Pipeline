@@ -25,7 +25,8 @@ def main():
     )
 
     # Đọc file Parquet
-    parquet_file = spark_connect.spark.read.parquet("../../data/1.parquet")
+    # parquet_file = spark_connect.spark.read.parquet("../../data/1.parquet")
+    parquet_file = spark_connect.spark.read.parquet("/opt/airflow/spark_project/data/1.parquet")
 
     # Biến đổi dữ liệu cho ClickHouse
     df_write_database = parquet_file.select(

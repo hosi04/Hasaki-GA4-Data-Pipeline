@@ -187,6 +187,8 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/data:/opt/airflow/data
       - ./credentials:/opt/airflow/credentials # <-- thêm dòng này
+
+      - /home/ngocthanh/Prime/intern/migrate-data-project/pycharm-project:/opt/airflow/spark_project
     ports:
       - "8080:8080"
       - "8001:8001"
@@ -230,6 +232,8 @@ services:
       - ./airflow/logs:/opt/airflow/logs
       - ./airflow/data:/opt/airflow/data
       - ./credentials:/opt/airflow/credentials # <-- thêm dòng này
+
+      - /home/ngocthanh/Prime/intern/migrate-data-project/pycharm-project:/opt/airflow/spark_project
     command: scheduler
     healthcheck:
       test: ["CMD-SHELL", "airflow jobs check --job-type SchedulerJob --hostname airflow-scheduler || exit 1"]
@@ -246,9 +250,59 @@ services:
       - airflow-network
     restart: unless-stopped
 
+  spark-master:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_MASTER_WEBUI_PORT=8081
+    ports:
+      - "8081:8081"
+      - "7077:7077"
+    volumes:
+      - spark-data:/bitnami
+      - ./include:/opt/airflow/include
+      - ./apps:/opt/spark-apps
+      - ./data:/opt/spark-data
+
+
+      - /home/ngocthanh/spark-3.5.3/jars:/opt/spark-jars
+      - /home/ngocthanh/Prime/intern/migrate-data-project/pycharm-project:/opt/bitnami/spark/spark_project
+    networks:
+      - airflow-network
+
+  spark-worker:
+    image: bitnami/spark:latest
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+    volumes:
+      - spark-data:/bitnami
+      - ./include:/opt/airflow/include
+      - ./apps:/opt/spark-apps
+      - ./data:/opt/spark-data
+
+
+      - /home/ngocthanh/spark-3.5.3/jars:/opt/spark-jars
+      - /home/ngocthanh/Prime/intern/migrate-data-project/pycharm-project:/opt/bitnami/spark/spark_project
+    depends_on:
+      - spark-master
+    networks:
+      - airflow-network
+
 networks:
   airflow-network:
     driver: bridge
+  
 
 volumes:
   postgres-data:
@@ -256,3 +310,5 @@ volumes:
   zookeeper-logs:
   kafka-data:
   clickhouse-data:
+
+  spark-data:

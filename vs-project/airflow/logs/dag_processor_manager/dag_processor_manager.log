@@ -10770,3 +10770,2292 @@ File Path                                      PID    Runtime      # DAGs    # E
 /opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:04:00
 ================================================================================
 [2025-07-06T03:04:29.897+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T03:22:10.720+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T03:22:10.721+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T03:22:10.721+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T03:22:10.721+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T03:22:10.721+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2025-07-06T03:22:10.803+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_connection_to_minio.py    188  0.02s             0           0
+================================================================================
+[2025-07-06T03:22:40.897+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.39s           2025-07-06T03:22:11
+================================================================================
+[2025-07-06T03:23:10.912+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.59s           2025-07-06T03:22:41
+================================================================================
+[2025-07-06T03:23:41.013+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:23:12
+================================================================================
+[2025-07-06T03:24:11.231+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:23:42
+================================================================================
+[2025-07-06T03:24:41.435+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:24:12
+================================================================================
+[2025-07-06T03:25:11.639+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:24:42
+================================================================================
+[2025-07-06T03:25:41.838+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:25:12
+================================================================================
+[2025-07-06T03:26:12.035+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:25:43
+================================================================================
+[2025-07-06T03:26:42.236+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:26:13
+================================================================================
+[2025-07-06T03:27:11.426+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T03:27:11.427+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2025-07-06T03:27:12.436+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.21s           2025-07-06T03:26:43
+================================================================================
+[2025-07-06T03:27:42.715+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:27:13
+================================================================================
+[2025-07-06T03:28:12.913+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:27:43
+================================================================================
+[2025-07-06T03:28:43.111+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:28:14
+================================================================================
+[2025-07-06T03:29:13.316+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:28:44
+================================================================================
+[2025-07-06T03:29:43.521+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:29:14
+================================================================================
+[2025-07-06T03:30:13.716+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:29:44
+================================================================================
+[2025-07-06T03:30:43.715+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T03:32:57.522+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T03:32:57.534+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T03:32:57.534+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T03:32:57.534+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T03:32:57.535+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T03:32:57.626+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.02s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    190  0.02s             0           0
+================================================================================
+[2025-07-06T03:33:27.846+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.47s           2025-07-06T03:32:58
+/opt/airflow/dags/test_spark.py                  232  0.00s             0           1  0.06s           2025-07-06T03:32:57
+================================================================================
+[2025-07-06T03:33:58.016+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.39s           2025-07-06T03:33:29
+/opt/airflow/dags/test_spark.py                  271  0.00s             0           1  0.07s           2025-07-06T03:33:27
+================================================================================
+[2025-07-06T03:34:28.158+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:34:00
+/opt/airflow/dags/test_spark.py                  316  0.00s             0           1  0.04s           2025-07-06T03:33:58
+================================================================================
+[2025-07-06T03:34:58.280+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:34:30
+/opt/airflow/dags/test_spark.py                                         0           1  0.04s           2025-07-06T03:34:52
+================================================================================
+[2025-07-06T03:35:28.437+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:35:00
+/opt/airflow/dags/test_spark.py                                         0           1  0.09s           2025-07-06T03:35:25
+================================================================================
+[2025-07-06T03:35:58.642+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:35:30
+/opt/airflow/dags/test_spark.py                  403  0.00s             0           1  0.05s           2025-07-06T03:35:50
+================================================================================
+[2025-07-06T03:36:28.793+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:36:00
+/opt/airflow/dags/test_spark.py                                         0           1  0.04s           2025-07-06T03:36:10
+================================================================================
+[2025-07-06T03:36:58.923+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:36:30
+/opt/airflow/dags/test_spark.py                                         0           1  0.05s           2025-07-06T03:36:40
+================================================================================
+[2025-07-06T03:37:29.052+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:37:01
+/opt/airflow/dags/test_spark.py                                         0           1  0.05s           2025-07-06T03:37:11
+================================================================================
+[2025-07-06T03:37:58.188+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T03:37:58.189+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T03:37:59.198+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.24s           2025-07-06T03:37:31
+/opt/airflow/dags/test_spark.py                                         0           1  0.05s           2025-07-06T03:37:41
+================================================================================
+[2025-07-06T03:38:29.327+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.22s           2025-07-06T03:38:02
+/opt/airflow/dags/test_spark.py                                         0           1  0.05s           2025-07-06T03:38:11
+================================================================================
+[2025-07-06T03:38:59.453+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T03:38:33
+/opt/airflow/dags/test_spark.py                                         0           1  0.05s           2025-07-06T03:38:41
+================================================================================
+[2025-07-06T03:39:29.592+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:39:04
+/opt/airflow/dags/test_spark.py                                         0           1  0.06s           2025-07-06T03:39:11
+================================================================================
+[2025-07-06T03:39:40.938+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T03:40:32.424+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T03:40:32.425+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T03:40:32.425+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T03:40:32.425+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T03:40:32.425+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T03:40:32.530+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.06s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    190  0.06s             0           0
+================================================================================
+[2025-07-06T03:40:39.214+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T03:56:42.734+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T03:56:42.735+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T03:56:42.735+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T03:56:42.735+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T03:56:42.735+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T03:56:42.839+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.06s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    191  0.05s             0           0
+================================================================================
+[2025-07-06T03:57:13.044+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.40s           2025-07-06T03:56:43
+/opt/airflow/dags/test_spark.py                  232  0.00s             0           1  0.07s           2025-07-06T03:56:42
+================================================================================
+[2025-07-06T03:57:43.246+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.42s           2025-07-06T03:57:14
+/opt/airflow/dags/test_spark.py                  270  0.00s             0           1  0.10s           2025-07-06T03:57:13
+================================================================================
+[2025-07-06T03:58:13.439+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.20s           2025-07-06T03:57:45
+/opt/airflow/dags/test_spark.py                  315  0.00s             0           1  0.05s           2025-07-06T03:57:43
+================================================================================
+[2025-07-06T03:58:43.610+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:58:15
+/opt/airflow/dags/test_spark.py                  353  0.00s             0           1  0.05s           2025-07-06T03:58:13
+================================================================================
+[2025-07-06T03:59:13.759+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:58:45
+/opt/airflow/dags/test_spark.py                  370  0.00s             0           1  0.05s           2025-07-06T03:58:43
+================================================================================
+[2025-07-06T03:59:43.923+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T03:59:15
+/opt/airflow/dags/test_spark.py                  387  0.00s             0           1  0.05s           2025-07-06T03:59:13
+================================================================================
+[2025-07-06T04:00:14.077+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T03:59:46
+/opt/airflow/dags/test_spark.py                  405  0.00s             0           1  0.05s           2025-07-06T03:59:43
+================================================================================
+[2025-07-06T04:00:16.139+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T04:02:22.646+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T04:02:22.647+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T04:02:22.647+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T04:02:22.647+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:02:22.649+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:02:22.756+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.06s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    190  0.06s             0           0
+================================================================================
+[2025-07-06T04:02:52.972+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.67s           2025-07-06T04:02:23
+/opt/airflow/dags/test_spark.py                                         1           0  0.37s           2025-07-06T04:02:45
+================================================================================
+[2025-07-06T04:03:23.371+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.29s           2025-07-06T04:02:54
+/opt/airflow/dags/test_spark.py                                         1           0  0.26s           2025-07-06T04:03:15
+================================================================================
+[2025-07-06T04:03:53.578+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.25s           2025-07-06T04:03:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:03:24
+================================================================================
+[2025-07-06T04:04:23.805+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                  364  0.00s             1           0  0.28s           2025-07-06T04:04:17
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:03:54
+================================================================================
+[2025-07-06T04:04:53.915+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.27s           2025-07-06T04:04:24
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T04:04:24
+================================================================================
+[2025-07-06T04:05:24.133+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         0           0  0.24s           2025-07-06T04:05:23
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T04:04:55
+================================================================================
+[2025-07-06T04:05:54.477+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.57s           2025-07-06T04:05:52
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T04:05:25
+================================================================================
+[2025-07-06T04:06:24.850+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.26s           2025-07-06T04:06:15
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:05:55
+================================================================================
+[2025-07-06T04:06:55.067+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.27s           2025-07-06T04:06:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:06:25
+================================================================================
+[2025-07-06T04:07:23.176+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:07:23.178+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:07:25.191+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.21s           2025-07-06T04:06:56
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:07:10
+================================================================================
+[2025-07-06T04:07:55.532+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.20s           2025-07-06T04:07:27
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:07:40
+================================================================================
+[2025-07-06T04:08:25.732+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:08:10
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:07:57
+================================================================================
+[2025-07-06T04:08:55.955+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.10s           2025-07-06T04:08:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T04:08:27
+================================================================================
+[2025-07-06T04:09:26.172+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:09:13
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:08:58
+================================================================================
+[2025-07-06T04:09:56.376+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:09:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:09:28
+================================================================================
+[2025-07-06T04:10:26.589+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:09:58
+/opt/airflow/dags/test_spark.py                                         1           0  0.10s           2025-07-06T04:10:13
+================================================================================
+[2025-07-06T04:10:56.803+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:10:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:10:28
+================================================================================
+[2025-07-06T04:12:43.508+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T04:12:43.508+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T04:12:43.508+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T04:12:43.508+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:12:43.509+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:12:43.601+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.06s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    191  0.06s             0           0
+================================================================================
+[2025-07-06T04:13:14.117+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.60s           2025-07-06T04:12:44
+/opt/airflow/dags/test_spark.py                  232  0.00s             1           0  0.46s           2025-07-06T04:12:43
+================================================================================
+[2025-07-06T04:13:44.204+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.89s           2025-07-06T04:13:15
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.49s           2025-07-06T04:13:15
+================================================================================
+[2025-07-06T04:14:14.801+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.51s           2025-07-06T04:13:45
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.49s           2025-07-06T04:13:45
+================================================================================
+[2025-07-06T04:14:44.915+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.15s           2025-07-06T04:14:15
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T04:14:15
+================================================================================
+[2025-07-06T04:15:15.141+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T04:14:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:14:46
+================================================================================
+[2025-07-06T04:15:45.400+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:15:16
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:15:16
+================================================================================
+[2025-07-06T04:16:16.170+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.66s           2025-07-06T04:15:47
+/opt/airflow/dags/test_spark.py                                         1           0  0.48s           2025-07-06T04:15:47
+================================================================================
+[2025-07-06T04:16:46.592+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:16:17
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:16:30
+================================================================================
+[2025-07-06T04:17:16.799+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T04:17:00
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:16:47
+================================================================================
+[2025-07-06T04:17:43.997+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:17:43.998+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:17:47.014+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:17:31
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:17:17
+================================================================================
+[2025-07-06T04:18:17.227+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:17:48
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:18:01
+================================================================================
+[2025-07-06T04:18:47.342+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.21s           2025-07-06T04:18:18
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:18:24
+================================================================================
+[2025-07-06T04:19:17.605+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:18:49
+/opt/airflow/dags/test_spark.py                                         1           0  0.10s           2025-07-06T04:18:54
+================================================================================
+[2025-07-06T04:19:47.822+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:19:24
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:19:19
+================================================================================
+[2025-07-06T04:20:18.050+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:19:54
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:19:49
+================================================================================
+[2025-07-06T04:20:48.276+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.23s           2025-07-06T04:20:25
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:20:20
+================================================================================
+[2025-07-06T04:21:18.482+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.21s           2025-07-06T04:20:55
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:20:50
+================================================================================
+[2025-07-06T04:21:48.713+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:21:20
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:21:25
+================================================================================
+[2025-07-06T04:22:18.937+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:21:50
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:21:55
+================================================================================
+[2025-07-06T04:22:44.133+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:22:44.135+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:22:49.163+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:22:26
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:22:21
+================================================================================
+[2025-07-06T04:23:19.380+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:22:56
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:22:51
+================================================================================
+[2025-07-06T04:23:49.609+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:23:21
+/opt/airflow/dags/test_spark.py                                         0           1  0.04s           2025-07-06T04:23:39
+================================================================================
+[2025-07-06T04:24:19.952+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:23:51
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:24:05
+================================================================================
+[2025-07-06T04:24:50.352+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:24:22
+/opt/airflow/dags/test_spark.py                  937  0.00s             1           0  0.11s           2025-07-06T04:24:38
+================================================================================
+[2025-07-06T04:25:12.129+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T04:26:00.735+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T04:26:00.736+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T04:26:00.736+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T04:26:00.736+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:26:00.737+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:26:00.830+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.06s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    191  0.06s             0           0
+================================================================================
+[2025-07-06T04:26:31.641+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py    236  0.00s             1           0  0.57s           2025-07-06T04:26:01
+/opt/airflow/dags/test_spark.py                  233  0.30s             1           0  0.46s           2025-07-06T04:26:01
+================================================================================
+[2025-07-06T04:27:02.563+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                  406  0.01s             1           0  0.91s           2025-07-06T04:26:32
+/opt/airflow/dags/test_connection_to_minio.py    409  0.00s             1           0  0.70s           2025-07-06T04:26:32
+================================================================================
+[2025-07-06T04:27:32.785+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                  451  0.01s             1           0  0.12s           2025-07-06T04:27:02
+/opt/airflow/dags/test_connection_to_minio.py    454  0.00s             1           0  0.12s           2025-07-06T04:27:02
+================================================================================
+[2025-07-06T04:28:03.043+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                  489  0.01s             1           0  0.16s           2025-07-06T04:27:32
+/opt/airflow/dags/test_connection_to_minio.py    492  0.00s             1           0  0.15s           2025-07-06T04:27:32
+================================================================================
+[2025-07-06T04:28:33.284+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                  506  0.01s             1           0  0.15s           2025-07-06T04:28:03
+/opt/airflow/dags/test_connection_to_minio.py    508  0.00s             1           0  0.13s           2025-07-06T04:28:03
+================================================================================
+[2025-07-06T04:29:03.539+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py    525  0.00s             1           0  0.15s           2025-07-06T04:28:33
+/opt/airflow/dags/test_spark.py                  523  0.01s             1           0  0.15s           2025-07-06T04:28:33
+================================================================================
+[2025-07-06T04:29:33.648+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T04:29:03
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.19s           2025-07-06T04:29:03
+================================================================================
+[2025-07-06T04:30:04.091+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py    559  0.00s             1           0  0.16s           2025-07-06T04:29:33
+/opt/airflow/dags/test_spark.py                  557  0.01s             1           0  0.16s           2025-07-06T04:29:33
+================================================================================
+[2025-07-06T04:30:34.406+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.69s           2025-07-06T04:30:13
+/opt/airflow/dags/test_connection_to_minio.py    721  0.00s             1           0  0.17s           2025-07-06T04:30:04
+================================================================================
+[2025-07-06T04:31:01.496+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:31:01.498+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:31:04.515+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.23s           2025-07-06T04:30:34
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:30:44
+================================================================================
+[2025-07-06T04:31:34.734+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.23s           2025-07-06T04:31:05
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:31:14
+================================================================================
+[2025-07-06T04:32:04.936+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:31:35
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:31:44
+================================================================================
+[2025-07-06T04:32:35.250+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:32:06
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:32:15
+================================================================================
+[2025-07-06T04:33:05.473+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:32:45
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:32:36
+================================================================================
+[2025-07-06T04:33:35.696+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:33:06
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:33:15
+================================================================================
+[2025-07-06T04:34:05.929+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T04:33:36
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:33:45
+================================================================================
+[2025-07-06T04:34:36.142+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:34:16
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:34:07
+================================================================================
+[2025-07-06T04:35:06.397+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T04:34:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:34:37
+================================================================================
+[2025-07-06T04:35:36.614+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:35:16
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:35:07
+================================================================================
+[2025-07-06T04:36:01.812+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:36:01.814+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:36:06.837+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:35:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:35:37
+================================================================================
+[2025-07-06T04:36:37.052+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:36:16
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:36:07
+================================================================================
+[2025-07-06T04:37:07.275+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T04:36:38
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:36:47
+================================================================================
+[2025-07-06T04:37:37.405+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T04:37:08
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:37:17
+================================================================================
+[2025-07-06T04:38:07.691+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:37:47
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T04:37:38
+================================================================================
+[2025-07-06T04:38:37.906+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:38:08
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:38:17
+================================================================================
+[2025-07-06T04:39:08.127+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:38:48
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:38:39
+================================================================================
+[2025-07-06T04:39:38.356+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:39:09
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T04:39:18
+================================================================================
+[2025-07-06T04:39:53.868+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T04:43:37.734+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T04:43:37.734+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T04:43:37.735+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T04:43:37.735+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:43:37.735+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:43:37.839+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  188  0.02s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    190  0.02s             0           0
+================================================================================
+[2025-07-06T04:44:08.347+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.58s           2025-07-06T04:43:38
+/opt/airflow/dags/test_spark.py                  233  0.00s             1           0  0.42s           2025-07-06T04:43:38
+================================================================================
+[2025-07-06T04:44:38.415+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.96s           2025-07-06T04:44:09
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.81s           2025-07-06T04:44:09
+================================================================================
+[2025-07-06T04:45:08.668+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T04:44:39
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T04:44:39
+================================================================================
+[2025-07-06T04:45:38.791+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.15s           2025-07-06T04:45:09
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T04:45:09
+================================================================================
+[2025-07-06T04:46:09.155+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T04:45:40
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T04:45:40
+================================================================================
+[2025-07-06T04:46:39.276+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.15s           2025-07-06T04:46:10
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T04:46:10
+================================================================================
+[2025-07-06T04:47:09.512+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.20s           2025-07-06T04:46:40
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.20s           2025-07-06T04:46:40
+================================================================================
+[2025-07-06T04:47:39.815+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T04:47:10
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:47:10
+================================================================================
+[2025-07-06T04:48:10.068+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:47:41
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:47:41
+================================================================================
+[2025-07-06T04:48:38.451+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:48:38.453+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:48:40.468+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T04:48:11
+/opt/airflow/dags/test_spark.py                                         1           0  0.14s           2025-07-06T04:48:11
+================================================================================
+[2025-07-06T04:49:10.612+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.34s           2025-07-06T04:48:41
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.34s           2025-07-06T04:48:41
+================================================================================
+[2025-07-06T04:49:41.031+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.33s           2025-07-06T04:49:12
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.32s           2025-07-06T04:49:12
+================================================================================
+[2025-07-06T04:50:11.565+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:49:42
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:49:42
+================================================================================
+[2025-07-06T04:50:41.686+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:50:12
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:50:12
+================================================================================
+[2025-07-06T04:51:11.935+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T04:50:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T04:50:43
+================================================================================
+[2025-07-06T04:51:42.198+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:51:13
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:51:13
+================================================================================
+[2025-07-06T04:52:12.467+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T04:51:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:51:43
+================================================================================
+[2025-07-06T04:52:42.655+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T04:52:13
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:52:13
+================================================================================
+[2025-07-06T04:53:12.826+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:52:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T04:52:43
+================================================================================
+[2025-07-06T04:53:39.204+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:53:39.205+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:53:43.230+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T04:53:14
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.19s           2025-07-06T04:53:14
+================================================================================
+[2025-07-06T04:54:13.464+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T04:53:44
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T04:53:44
+================================================================================
+[2025-07-06T04:54:43.598+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T04:54:14
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:54:14
+================================================================================
+[2025-07-06T04:55:14.019+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T04:54:44
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T04:54:44
+================================================================================
+[2025-07-06T04:55:44.268+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T04:55:15
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T04:55:15
+================================================================================
+[2025-07-06T04:56:14.388+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:55:45
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:55:45
+================================================================================
+[2025-07-06T04:56:44.814+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:56:15
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T04:56:15
+================================================================================
+[2025-07-06T04:57:15.065+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T04:56:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T04:56:45
+================================================================================
+[2025-07-06T04:57:45.349+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T04:57:16
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:57:16
+================================================================================
+[2025-07-06T04:58:15.461+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.15s           2025-07-06T04:57:46
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T04:57:46
+================================================================================
+[2025-07-06T04:58:39.669+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T04:58:39.671+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T04:58:45.694+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.15s           2025-07-06T04:58:16
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T04:58:16
+================================================================================
+[2025-07-06T04:59:15.932+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T04:58:47
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T04:58:47
+================================================================================
+[2025-07-06T04:59:46.201+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.20s           2025-07-06T04:59:17
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:59:17
+================================================================================
+[2025-07-06T05:00:16.492+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T04:59:47
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T04:59:47
+================================================================================
+[2025-07-06T05:00:46.859+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T05:00:17
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:00:17
+================================================================================
+[2025-07-06T05:01:17.141+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T05:00:48
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T05:00:48
+================================================================================
+[2025-07-06T05:01:47.368+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T05:01:18
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:01:18
+================================================================================
+[2025-07-06T05:02:17.650+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T05:01:48
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T05:01:48
+================================================================================
+[2025-07-06T05:02:48.098+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.35s           2025-07-06T05:02:19
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.35s           2025-07-06T05:02:19
+================================================================================
+[2025-07-06T05:03:18.416+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.21s           2025-07-06T05:02:49
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.20s           2025-07-06T05:02:49
+================================================================================
+[2025-07-06T05:03:39.670+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:03:39.671+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:03:48.699+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T05:03:19
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T05:03:19
+================================================================================
+[2025-07-06T05:04:19.032+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.21s           2025-07-06T05:03:49
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.21s           2025-07-06T05:03:49
+================================================================================
+[2025-07-06T05:04:49.320+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T05:04:20
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T05:04:20
+================================================================================
+[2025-07-06T05:05:19.603+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T05:04:50
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T05:04:50
+================================================================================
+[2025-07-06T05:05:49.727+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.20s           2025-07-06T05:05:20
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.19s           2025-07-06T05:05:20
+================================================================================
+[2025-07-06T05:06:20.168+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T05:05:51
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T05:05:51
+================================================================================
+[2025-07-06T05:06:50.292+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T05:06:21
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T05:06:21
+================================================================================
+[2025-07-06T05:07:20.656+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T05:06:51
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T05:06:51
+================================================================================
+[2025-07-06T05:07:50.783+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T05:07:21
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T05:07:21
+================================================================================
+[2025-07-06T05:08:21.210+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T05:07:52
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.19s           2025-07-06T05:07:52
+================================================================================
+[2025-07-06T05:08:40.284+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:08:40.286+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:08:51.330+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T05:08:22
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T05:08:22
+================================================================================
+[2025-07-06T05:09:11.042+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-07-06T05:10:08.954+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-07-06T05:10:08.955+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-07-06T05:10:08.955+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-07-06T05:10:08.955+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:10:08.956+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:10:09.046+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/test_spark.py                  187  0.06s             0           0
+/opt/airflow/dags/test_connection_to_minio.py    190  0.06s             0           0
+================================================================================
+[2025-07-06T05:10:39.555+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.58s           2025-07-06T05:10:09
+/opt/airflow/dags/test_spark.py                  233  0.00s             1           0  0.46s           2025-07-06T05:10:09
+================================================================================
+[2025-07-06T05:11:09.646+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.91s           2025-07-06T05:10:40
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.81s           2025-07-06T05:10:40
+================================================================================
+[2025-07-06T05:11:39.785+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T05:11:10
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T05:11:10
+================================================================================
+[2025-07-06T05:12:09.898+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.15s           2025-07-06T05:11:40
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.15s           2025-07-06T05:11:40
+================================================================================
+[2025-07-06T05:12:40.119+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T05:12:11
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T05:12:11
+================================================================================
+[2025-07-06T05:13:10.450+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:12:41
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:12:41
+================================================================================
+[2025-07-06T05:13:41.157+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.61s           2025-07-06T05:13:12
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.60s           2025-07-06T05:13:12
+================================================================================
+[2025-07-06T05:14:11.268+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.31s           2025-07-06T05:13:42
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.31s           2025-07-06T05:13:42
+================================================================================
+[2025-07-06T05:14:41.792+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:14:12
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:14:12
+================================================================================
+[2025-07-06T05:15:09.036+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:15:09.038+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:15:11.907+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T05:14:42
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T05:14:42
+================================================================================
+[2025-07-06T05:15:42.158+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.19s           2025-07-06T05:15:13
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T05:15:13
+================================================================================
+[2025-07-06T05:16:12.587+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.21s           2025-07-06T05:15:43
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T05:15:43
+================================================================================
+[2025-07-06T05:16:42.860+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T05:16:13
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T05:16:13
+================================================================================
+[2025-07-06T05:17:13.139+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T05:16:44
+/opt/airflow/dags/test_spark.py                                         1           0  0.18s           2025-07-06T05:16:44
+================================================================================
+[2025-07-06T05:17:43.441+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.20s           2025-07-06T05:17:14
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.19s           2025-07-06T05:17:14
+================================================================================
+[2025-07-06T05:18:13.552+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.21s           2025-07-06T05:17:44
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.20s           2025-07-06T05:17:44
+================================================================================
+[2025-07-06T05:18:44.105+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.21s           2025-07-06T05:18:14
+/opt/airflow/dags/test_spark.py                                         1           0  0.10s           2025-07-06T05:18:16
+================================================================================
+[2025-07-06T05:19:14.326+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:18:45
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:18:46
+================================================================================
+[2025-07-06T05:19:44.555+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:19:15
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:19:16
+================================================================================
+[2025-07-06T05:20:09.751+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:20:09.753+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:20:14.786+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.17s           2025-07-06T05:20:09
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:19:45
+================================================================================
+[2025-07-06T05:20:44.999+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:20:15
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:20:40
+================================================================================
+[2025-07-06T05:21:15.216+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:20:46
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:21:10
+================================================================================
+[2025-07-06T05:21:45.421+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:21:40
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:21:16
+================================================================================
+[2025-07-06T05:22:15.663+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.24s           2025-07-06T05:22:10
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:21:46
+================================================================================
+[2025-07-06T05:22:45.862+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.23s           2025-07-06T05:22:41
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:22:16
+================================================================================
+[2025-07-06T05:23:16.073+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:23:12
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:22:46
+================================================================================
+[2025-07-06T05:23:46.299+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:23:17
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:23:38
+================================================================================
+[2025-07-06T05:24:16.511+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.16s           2025-07-06T05:23:52
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:23:47
+================================================================================
+[2025-07-06T05:24:46.836+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.23s           2025-07-06T05:24:17
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:24:22
+================================================================================
+[2025-07-06T05:25:09.943+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:25:09.945+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:25:16.974+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.23s           2025-07-06T05:24:48
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:24:53
+================================================================================
+[2025-07-06T05:25:47.241+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T05:25:19
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:25:23
+================================================================================
+[2025-07-06T05:26:17.456+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:25:53
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:25:49
+================================================================================
+[2025-07-06T05:26:47.725+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.20s           2025-07-06T05:26:23
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:26:19
+================================================================================
+[2025-07-06T05:27:17.947+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:26:53
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:26:49
+================================================================================
+[2025-07-06T05:27:48.153+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                        PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                 1261  0.00s             1           0  0.16s           2025-07-06T05:27:47
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:27:20
+================================================================================
+[2025-07-06T05:28:18.504+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:27:51
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:27:50
+================================================================================
+[2025-07-06T05:28:48.720+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T05:28:21
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:28:20
+================================================================================
+[2025-07-06T05:29:18.936+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:28:51
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:28:50
+================================================================================
+[2025-07-06T05:29:49.149+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T05:29:22
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:29:21
+================================================================================
+[2025-07-06T05:30:10.342+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:30:10.344+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:30:19.377+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:29:51
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:29:52
+================================================================================
+[2025-07-06T05:30:49.583+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:30:22
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:30:21
+================================================================================
+[2025-07-06T05:31:19.794+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.13s           2025-07-06T05:30:52
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:30:51
+================================================================================
+[2025-07-06T05:31:50.020+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:31:22
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:31:21
+================================================================================
+[2025-07-06T05:32:20.267+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:32:06
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:31:52
+================================================================================
+[2025-07-06T05:32:50.461+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:32:22
+/opt/airflow/dags/test_spark.py                                         1           0  0.11s           2025-07-06T05:32:36
+================================================================================
+[2025-07-06T05:33:20.767+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:32:52
+/opt/airflow/dags/test_spark.py                                         1           0  0.06s           2025-07-06T05:33:16
+================================================================================
+[2025-07-06T05:33:50.944+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:33:22
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:33:46
+================================================================================
+[2025-07-06T05:34:21.367+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:33:53
+/opt/airflow/dags/test_spark.py                                         1           0  0.06s           2025-07-06T05:34:06
+================================================================================
+[2025-07-06T05:34:51.478+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:34:23
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:34:36
+================================================================================
+[2025-07-06T05:35:10.614+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:35:10.615+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:35:21.658+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:34:53
+/opt/airflow/dags/test_spark.py                                         1           0  0.06s           2025-07-06T05:35:06
+================================================================================
+[2025-07-06T05:35:51.808+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.18s           2025-07-06T05:35:23
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:35:36
+================================================================================
+[2025-07-06T05:36:21.963+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.16s           2025-07-06T05:35:54
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:36:06
+================================================================================
+[2025-07-06T05:36:52.151+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.29s           2025-07-06T05:36:25
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:36:37
+================================================================================
+[2025-07-06T05:37:22.359+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:36:56
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:37:07
+================================================================================
+[2025-07-06T05:37:52.475+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:37:26
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:37:37
+================================================================================
+[2025-07-06T05:38:22.712+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.41s           2025-07-06T05:37:56
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:38:07
+================================================================================
+[2025-07-06T05:38:52.905+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:38:27
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:38:37
+================================================================================
+[2025-07-06T05:39:23.109+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.12s           2025-07-06T05:39:08
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:38:58
+================================================================================
+[2025-07-06T05:39:53.220+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:39:28
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:39:38
+================================================================================
+[2025-07-06T05:40:11.338+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:40:11.339+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:40:23.384+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T05:39:58
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:40:08
+================================================================================
+[2025-07-06T05:40:53.594+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:40:28
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:40:38
+================================================================================
+[2025-07-06T05:41:23.710+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:40:58
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:41:08
+================================================================================
+[2025-07-06T05:41:53.908+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:41:28
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:41:37
+================================================================================
+[2025-07-06T05:42:24.024+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:41:59
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:42:08
+================================================================================
+[2025-07-06T05:42:54.283+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:42:29
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:42:50
+================================================================================
+[2025-07-06T05:43:24.559+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.31s           2025-07-06T05:43:20
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:42:59
+================================================================================
+[2025-07-06T05:43:54.924+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.36s           2025-07-06T05:43:29
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:43:50
+================================================================================
+[2025-07-06T05:44:25.138+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:44:00
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:44:21
+================================================================================
+[2025-07-06T05:44:55.257+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:44:30
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:44:51
+================================================================================
+[2025-07-06T05:45:11.384+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:45:11.385+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:45:25.462+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:45:00
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:45:21
+================================================================================
+[2025-07-06T05:45:55.661+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:45:30
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:45:51
+================================================================================
+[2025-07-06T05:46:25.784+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.21s           2025-07-06T05:46:00
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:46:21
+================================================================================
+[2025-07-06T05:46:55.964+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.17s           2025-07-06T05:46:31
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:46:52
+================================================================================
+[2025-07-06T05:47:26.177+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:47:02
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:47:22
+================================================================================
+[2025-07-06T05:47:56.452+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_spark.py                                         1           0  0.30s           2025-07-06T05:47:52
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:47:32
+================================================================================
+[2025-07-06T05:48:26.677+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T05:48:02
+/opt/airflow/dags/test_spark.py                                         1           0  0.08s           2025-07-06T05:48:22
+================================================================================
+[2025-07-06T05:48:56.866+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.10s           2025-07-06T05:48:32
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:48:52
+================================================================================
+[2025-07-06T05:49:27.007+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.11s           2025-07-06T05:49:03
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:49:23
+================================================================================
+[2025-07-06T05:49:57.241+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:49:33
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:49:53
+================================================================================
+[2025-07-06T05:50:11.674+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-07-06T05:50:11.675+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2025-07-06T05:50:27.803+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.38s           2025-07-06T05:50:03
+/opt/airflow/dags/test_spark.py                                         1           0  0.07s           2025-07-06T05:50:22
+================================================================================
+[2025-07-06T05:50:57.922+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T05:50:33
+/opt/airflow/dags/test_spark.py                                         1           0  0.06s           2025-07-06T05:50:52
+================================================================================
+[2025-07-06T05:51:28.081+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.13s           2025-07-06T05:51:04
+/opt/airflow/dags/test_spark.py                                         1           0  0.09s           2025-07-06T05:51:23
+================================================================================
+[2025-07-06T05:51:58.265+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+---------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/test_connection_to_minio.py                           1           0  0.12s           2025-07-06T05:51:34
+/opt/airflow/dags/test_spark.py                                         1           0  0.06s           2025-07-06T05:51:53
+================================================================================
