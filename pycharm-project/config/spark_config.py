@@ -41,7 +41,8 @@ class SparkConnect():
     ) -> SparkSession:
         builder = SparkSession.builder \
             .appName(self.app_name) \
-            .master(master_url)
+            .master(master_url) \
+            .config("spark.jars", "/home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar,/home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar")
 
         if executor_memory:
             builder.config("spark.executor.memory", executor_memory)
@@ -61,6 +62,15 @@ class SparkConnect():
                 builder.config(key, value)
 
         spark = builder.getOrCreate()
+
+        # SPARK CONFIG MINIO!!!
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "sOiuVZbAAGgmvx7Gm9c1")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key","esMneNDLEzNoVz8mXrqgMl3GvOyfflD7nTBEm0Po")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.endpoint", "https://minio.vgpu.rdhasaki.com")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.path.style.access", "true")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
+        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.connection.ssl.enabled", "false")
+
         spark.sparkContext.setLogLevel(log_level)
         return spark
 
