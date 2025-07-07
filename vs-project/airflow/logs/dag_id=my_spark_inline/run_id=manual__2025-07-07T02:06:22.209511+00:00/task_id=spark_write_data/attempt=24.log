@@ -1,0 +1,16 @@
+[2025-07-07T03:50:08.381+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-07T03:50:08.844+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_spark_inline.spark_write_data manual__2025-07-07T02:06:22.209511+00:00 [queued]>
+[2025-07-07T03:50:08.852+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_spark_inline.spark_write_data manual__2025-07-07T02:06:22.209511+00:00 [queued]>
+[2025-07-07T03:50:08.852+0000] {taskinstance.py:2303} INFO - Starting attempt 24 of 24
+[2025-07-07T03:50:08.858+0000] {taskinstance.py:2327} INFO - Executing <Task(SparkSubmitOperator): spark_write_data> on 2025-07-07 02:06:22.209511+00:00
+[2025-07-07T03:50:08.862+0000] {standard_task_runner.py:63} INFO - Started process 9501 to run task
+[2025-07-07T03:50:08.865+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_spark_inline', 'spark_write_data', 'manual__2025-07-07T02:06:22.209511+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/test_spark.py', '--cfg-path', '/tmp/tmp84n8cxlv']
+[2025-07-07T03:50:08.866+0000] {standard_task_runner.py:91} INFO - Job 119: Subtask spark_write_data
+[2025-07-07T03:50:08.875+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-07T03:50:19.008+0000] {local_task_job_runner.py:310} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-07-07T03:50:19.008+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-07-07T03:50:19.009+0000] {process_utils.py:132} INFO - Sending 15 to group 9501. PIDs of all processes in the group: [9502, 9542, 9501]
+[2025-07-07T03:50:19.010+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 9501
+[2025-07-07T03:50:19.102+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=9502, status='terminated', started='03:50:08') (9502) terminated with exit code None
+[2025-07-07T03:50:19.102+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=9542, status='terminated', started='03:50:10') (9542) terminated with exit code None
+[2025-07-07T03:50:19.102+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=9501, status='terminated', exitcode=0, started='03:50:07') (9501) terminated with exit code 0

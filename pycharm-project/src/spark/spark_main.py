@@ -1,3 +1,5 @@
+import time
+
 from pyspark.sql.functions import col, to_date, to_json
 from pyspark.sql.types import *
 

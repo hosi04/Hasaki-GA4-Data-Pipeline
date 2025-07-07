@@ -11,21 +11,80 @@ def main():
         "org.apache.httpcomponents.client5:httpclient5:5.3.1",
     ]
 
+    # Danh cho nhung config ma khong phai SparkSession nao cung su dung!
+    spark_config = {
+        "fs.s3a.access.key": "sOiuVZbAAGgmvx7Gm9c1",
+        "fs.s3a.secret.key": "esMneNDLEzNoVz8mXrqgMl3GvOyfflD7nTBEm0Po",
+        "fs.s3a.endpoint": "https://minio.vgpu.rdhasaki.com",
+        "fs.s3a.path.style.access": "true",
+        "fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem",
+        "fs.s3a.connection.ssl.enabled": "false",
+        # Error XXs
+        "fs.s3a.threads.keepalivetime": "60000",
+        "fs.s3a.connection.establish.timeout": "30000",
+        "fs.s3a.connection.timeout": "200000",
+        "fs.s3a.socket.timeout": "200000",
+        "fs.s3a.connection.acquire.timeout": "60000",
+        "fs.s3a.multipart.purge.age": "86400000",
+        # Thêm dòng này để fix lỗi credential provider
+        "fs.s3a.aws.credentials.provider": "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider"
+    }
+
     spark_connect = SparkConnect(
         app_name="thanhdz",
-        master_url="local[*]",
+        # master_url="local[*]",
+        master_url="spark://spark-master:7077",
         executor_cores=2,
-        executor_memory="4g",
+        executor_memory="1g",
         driver_memory="2g",
-        num_executors=3,
+        num_executors=1,
         jar_packages=jar_packages,
+        spark_conf=spark_config,
         log_level="WARN"
     )
     spark = spark_connect.spark
+    # conf = spark.sparkContext._jsc.hadoopConfiguration()
+    # print("----------Hadoop Config Check-----------")
+    #
+    # iter_conf = conf.iterator()
+    # while iter_conf.hasNext():
+    #     entry = iter_conf.next()
+    #     key = entry.getKey()
+    #     val = entry.getValue()
+    #     if "60s" in val or "s" in val:
+    #         print(f"{key} = {val}")
+
+    ## Kiểm tra cấu hình Hadoop trong Runtime
+    print("--- Checking Spark Hadoop Configurations ---")
+    hadoop_conf = spark._jvm.org.apache.hadoop.conf.Configuration()
+
+    # Lấy iterator từ đối tượng cấu hình Java
+    config_iterator = hadoop_conf.iterator()
+
+    found_24h = False
+    while config_iterator.hasNext():
+        entry = config_iterator.next()
+        key = entry.getKey()
+        value = entry.getValue()
+
+        # In ra tất cả các thuộc tính liên quan đến S3A
+        if "s3a" in key.lower():
+            print(f"S3A Config: {key} = {value}")
+
+        # Đặc biệt tìm kiếm "24h" trong bất kỳ giá trị nào
+        if "24h" in str(value).lower():  # Chuyển đổi thành string và tìm kiếm
+            print(f"!!! FOUND '24h' !!! -> {key} = {value}")
+            found_24h = True
+
+    if not found_24h:
+        print("No '24h' found in any Hadoop configuration values.")
+    print("------------------------------------------")
 
     # Read Parquet file from MinIO
     bucket_name = "hasaki-datalake"
     file_path = f"s3a://{bucket_name}/ga4-data/hasakiwork/analytics_253437596/events/2025/4/15/0.parquet"
+
+    # PHAI VIET SCHEMA TRUOC KHI READ FILE!!!
     parquet_file = spark.read.parquet(file_path)
 
     # Biến đổi dữ liệu cho ClickHouse

@@ -7,7 +7,8 @@ class SparkConnect():
     def __init__(
             self,
             app_name: str,
-            master_url: str = "local[*]",
+            # master_url: str = "local[*]",
+            master_url: str = "spark://spark-master:7077",
             executor_cores: Optional[int] = 2,
             executor_memory: Optional[str] = "4g",
             driver_memory: Optional[str] = "2g",
@@ -30,7 +31,8 @@ class SparkConnect():
 
     def create_spark_session(
             self,
-            master_url: str = "local[*]",
+            # master_url: str = "local[*]",
+            master_url: str = "spark://spark-master:7077",
             executor_cores: Optional[int] = 2,
             executor_memory: Optional[str] = "4g",
             driver_memory: Optional[str] = "2g",
@@ -62,14 +64,6 @@ class SparkConnect():
                 builder.config(key, value)
 
         spark = builder.getOrCreate()
-
-        # SPARK CONFIG MINIO!!!
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.access.key", "sOiuVZbAAGgmvx7Gm9c1")
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.secret.key","esMneNDLEzNoVz8mXrqgMl3GvOyfflD7nTBEm0Po")
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.endpoint", "https://minio.vgpu.rdhasaki.com")
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.path.style.access", "true")
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
-        spark.sparkContext._jsc.hadoopConfiguration().set("fs.s3a.connection.ssl.enabled", "false")
 
         spark.sparkContext.setLogLevel(log_level)
         return spark

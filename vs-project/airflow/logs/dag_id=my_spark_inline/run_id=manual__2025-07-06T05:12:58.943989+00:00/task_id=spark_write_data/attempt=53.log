@@ -1,0 +1,673 @@
+[2025-07-07T01:58:57.036+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-07T01:58:57.214+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: my_spark_inline.spark_write_data manual__2025-07-06T05:12:58.943989+00:00 [queued]>
+[2025-07-07T01:58:57.219+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: my_spark_inline.spark_write_data manual__2025-07-06T05:12:58.943989+00:00 [queued]>
+[2025-07-07T01:58:57.219+0000] {taskinstance.py:2303} INFO - Starting attempt 53 of 53
+[2025-07-07T01:58:57.233+0000] {taskinstance.py:2327} INFO - Executing <Task(SparkSubmitOperator): spark_write_data> on 2025-07-06 05:12:58.943989+00:00
+[2025-07-07T01:58:57.237+0000] {standard_task_runner.py:63} INFO - Started process 1982 to run task
+[2025-07-07T01:58:57.239+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'my_spark_inline', 'spark_write_data', 'manual__2025-07-06T05:12:58.943989+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/test_spark.py', '--cfg-path', '/tmp/tmpazztg8ud']
+[2025-07-07T01:58:57.240+0000] {standard_task_runner.py:91} INFO - Job 90: Subtask spark_write_data
+[2025-07-07T01:58:57.249+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-07T01:58:57.275+0000] {task_command.py:426} INFO - Running <TaskInstance: my_spark_inline.spark_write_data manual__2025-07-06T05:12:58.943989+00:00 [running]> on host 40aa9e29f527
+[2025-07-07T01:58:57.324+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='my_spark_inline' AIRFLOW_CTX_TASK_ID='spark_write_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-06T05:12:58.943989+00:00' AIRFLOW_CTX_TRY_NUMBER='53' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-06T05:12:58.943989+00:00'
+[2025-07-07T01:58:57.324+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-07T01:58:57.336+0000] {base.py:84} INFO - Using connection ID 'spark-master' for task execution.
+[2025-07-07T01:58:57.337+0000] {spark_submit.py:473} INFO - Spark-Submit cmd: spark-submit --master spark-master:7077 --packages com.clickhouse:clickhouse-jdbc:0.6.4,org.apache.httpcomponents.client5:httpclient5:5.3.1,org.apache.hadoop:hadoop-aws:3.3.5,com.amazonaws:aws-java-sdk-bundle:1.12.674 --name arrow-spark --deploy-mode client /opt/***/spark_project/src/spark/spark_main_minio.py
+[2025-07-07T01:58:57.579+0000] {spark_submit.py:634} INFO - WARNING: Using incubator modules: jdk.incubator.vector
+[2025-07-07T01:58:58.916+0000] {spark_submit.py:634} INFO - :: loading settings :: url = jar:file:/home/***/.local/lib/python3.11/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2025-07-07T01:58:58.991+0000] {spark_submit.py:634} INFO - Ivy Default Cache set to: /home/***/.ivy2.5.2/cache
+[2025-07-07T01:58:58.992+0000] {spark_submit.py:634} INFO - The jars for the packages stored in: /home/***/.ivy2.5.2/jars
+[2025-07-07T01:58:58.994+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-jdbc added as a dependency
+[2025-07-07T01:58:58.994+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.client5#httpclient5 added as a dependency
+[2025-07-07T01:58:58.994+0000] {spark_submit.py:634} INFO - org.apache.hadoop#hadoop-aws added as a dependency
+[2025-07-07T01:58:58.994+0000] {spark_submit.py:634} INFO - com.amazonaws#aws-java-sdk-bundle added as a dependency
+[2025-07-07T01:58:58.994+0000] {spark_submit.py:634} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-d1489ea8-29b2-43bd-8604-33e378767432;1.0
+[2025-07-07T01:58:58.994+0000] {spark_submit.py:634} INFO - confs: [default]
+[2025-07-07T01:58:59.119+0000] {spark_submit.py:634} INFO - found com.clickhouse#clickhouse-jdbc;0.6.4 in central
+[2025-07-07T01:58:59.187+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.client5#httpclient5;5.3.1 in central
+[2025-07-07T01:58:59.202+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.core5#httpcore5;5.2.4 in central
+[2025-07-07T01:58:59.281+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.core5#httpcore5-h2;5.2.4 in central
+[2025-07-07T01:58:59.294+0000] {spark_submit.py:634} INFO - found org.slf4j#slf4j-api;1.7.36 in central
+[2025-07-07T01:58:59.385+0000] {spark_submit.py:634} INFO - found org.apache.hadoop#hadoop-aws;3.3.5 in central
+[2025-07-07T01:58:59.407+0000] {spark_submit.py:634} INFO - found org.wildfly.openssl#wildfly-openssl;1.1.3.Final in central
+[2025-07-07T01:58:59.481+0000] {spark_submit.py:634} INFO - found com.amazonaws#aws-java-sdk-bundle;1.12.674 in central
+[2025-07-07T01:58:59.495+0000] {spark_submit.py:634} INFO - :: resolution report :: resolve 493ms :: artifacts dl 8ms
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - :: modules in use:
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - com.amazonaws#aws-java-sdk-bundle;1.12.674 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-jdbc;0.6.4 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - org.apache.hadoop#hadoop-aws;3.3.5 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.client5#httpclient5;5.3.1 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.core5#httpcore5;5.2.4 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.core5#httpcore5-h2;5.2.4 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - org.slf4j#slf4j-api;1.7.36 from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - org.wildfly.openssl#wildfly-openssl;1.1.3.Final from central in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - :: evicted modules:
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - com.amazonaws#aws-java-sdk-bundle;1.12.316 by [com.amazonaws#aws-java-sdk-bundle;1.12.674] in [default]
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - |                  |            modules            ||   artifacts   |
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - |      default     |   9   |   0   |   0   |   1   ||   8   |   0   |
+[2025-07-07T01:58:59.496+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-07-07T01:58:59.499+0000] {spark_submit.py:634} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-d1489ea8-29b2-43bd-8604-33e378767432
+[2025-07-07T01:58:59.499+0000] {spark_submit.py:634} INFO - confs: [default]
+[2025-07-07T01:58:59.502+0000] {spark_submit.py:634} INFO - 0 artifacts copied, 8 already retrieved (0kB/4ms)
+[2025-07-07T01:58:59.799+0000] {spark_submit.py:634} INFO - 25/07/07 01:58:59 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-07-07T01:59:01.286+0000] {spark_submit.py:634} INFO - Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+[2025-07-07T01:59:01.289+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkContext: Running Spark version 4.0.0
+[2025-07-07T01:59:01.290+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkContext: OS info Linux, 6.8.0-60-generic, amd64
+[2025-07-07T01:59:01.290+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkContext: Java version 17.0.15
+[2025-07-07T01:59:01.304+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO ResourceUtils: ==============================================================
+[2025-07-07T01:59:01.304+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-07-07T01:59:01.304+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO ResourceUtils: ==============================================================
+[2025-07-07T01:59:01.304+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkContext: Submitted application: thanhdz
+[2025-07-07T01:59:01.317+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 4096, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-07-07T01:59:01.382+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+[2025-07-07T01:59:01.384+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-07-07T01:59:01.411+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SecurityManager: Changing view acls to: ***
+[2025-07-07T01:59:01.411+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SecurityManager: Changing modify acls to: ***
+[2025-07-07T01:59:01.412+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SecurityManager: Changing view acls groups to: ***
+[2025-07-07T01:59:01.412+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SecurityManager: Changing modify acls groups to: ***
+[2025-07-07T01:59:01.413+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: *** groups with view permissions: EMPTY; users with modify permissions: ***; groups with modify permissions: EMPTY; RPC SSL disabled
+[2025-07-07T01:59:01.630+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO Utils: Successfully started service 'sparkDriver' on port 36889.
+[2025-07-07T01:59:01.690+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkEnv: Registering MapOutputTracker
+[2025-07-07T01:59:01.697+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkEnv: Registering BlockManagerMaster
+[2025-07-07T01:59:01.705+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-07-07T01:59:01.705+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-07-07T01:59:01.707+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-07-07T01:59:01.721+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-5d88c7f5-e074-446a-9723-f2007b1ee424
+[2025-07-07T01:59:01.787+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-07-07T01:59:01.926+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:01 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2025-07-07T01:59:02.014+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2025-07-07T01:59:02.093+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 ERROR SparkContext: Failed to add /home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar to Spark environment
+[2025-07-07T01:59:02.093+0000] {spark_submit.py:634} INFO - java.io.FileNotFoundException: Jar /home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar not found
+[2025-07-07T01:59:02.093+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.addLocalJarFile$1(SparkContext.scala:2174)
+[2025-07-07T01:59:02.093+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.addJar(SparkContext.scala:2230)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.$anonfun$new$15(SparkContext.scala:538)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.$anonfun$new$15$adapted(SparkContext.scala:538)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.<init>(SparkContext.scala:538)
+[2025-07-07T01:59:02.094+0000] {spark_submit.py:634} INFO - at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+[2025-07-07T01:59:02.095+0000] {spark_submit.py:634} INFO - at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at py4j.Gateway.invoke(Gateway.java:238)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 ERROR SparkContext: Failed to add /home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar to Spark environment
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - java.io.FileNotFoundException: Jar /home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar not found
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.addLocalJarFile$1(SparkContext.scala:2174)
+[2025-07-07T01:59:02.096+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.addJar(SparkContext.scala:2230)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.$anonfun$new$15(SparkContext.scala:538)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.$anonfun$new$15$adapted(SparkContext.scala:538)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at org.apache.spark.SparkContext.<init>(SparkContext.scala:538)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:59)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at py4j.Gateway.invoke(Gateway.java:238)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+[2025-07-07T01:59:02.097+0000] {spark_submit.py:634} INFO - at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+[2025-07-07T01:59:02.098+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+[2025-07-07T01:59:02.098+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+[2025-07-07T01:59:02.098+0000] {spark_submit.py:634} INFO - at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-07-07T01:59:02.098+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/com.clickhouse_clickhouse-jdbc-0.6.4.jar at spark://40aa9e29f527:36889/files/com.clickhouse_clickhouse-jdbc-0.6.4.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.098+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/com.clickhouse_clickhouse-jdbc-0.6.4.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/com.clickhouse_clickhouse-jdbc-0.6.4.jar
+[2025-07-07T01:59:02.104+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar at spark://40aa9e29f527:36889/files/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.104+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar
+[2025-07-07T01:59:02.111+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.hadoop_hadoop-aws-3.3.5.jar at spark://40aa9e29f527:36889/files/org.apache.hadoop_hadoop-aws-3.3.5.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.112+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.hadoop_hadoop-aws-3.3.5.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/org.apache.hadoop_hadoop-aws-3.3.5.jar
+[2025-07-07T01:59:02.116+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.674.jar at spark://40aa9e29f527:36889/files/com.amazonaws_aws-java-sdk-bundle-1.12.674.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.117+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.674.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/com.amazonaws_aws-java-sdk-bundle-1.12.674.jar
+[2025-07-07T01:59:02.315+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar at spark://40aa9e29f527:36889/files/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.315+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar
+[2025-07-07T01:59:02.320+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar at spark://40aa9e29f527:36889/files/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.320+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar
+[2025-07-07T01:59:02.323+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.slf4j_slf4j-api-1.7.36.jar at spark://40aa9e29f527:36889/files/org.slf4j_slf4j-api-1.7.36.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.324+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.slf4j_slf4j-api-1.7.36.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/org.slf4j_slf4j-api-1.7.36.jar
+[2025-07-07T01:59:02.328+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at spark://40aa9e29f527:36889/files/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1751853541281
+[2025-07-07T01:59:02.328+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar to /tmp/spark-683eaab7-116f-40bf-99ea-70914e748de0/userFiles-2936c11e-e6d2-40c2-a17a-9080661694fe/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar
+[2025-07-07T01:59:02.344+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SecurityManager: Changing view acls to: ***
+[2025-07-07T01:59:02.344+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SecurityManager: Changing modify acls to: ***
+[2025-07-07T01:59:02.344+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SecurityManager: Changing view acls groups to: ***
+[2025-07-07T01:59:02.344+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SecurityManager: Changing modify acls groups to: ***
+[2025-07-07T01:59:02.344+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: *** groups with view permissions: EMPTY; users with modify permissions: ***; groups with modify permissions: EMPTY; RPC SSL disabled
+[2025-07-07T01:59:02.518+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+[2025-07-07T01:59:02.608+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO TransportClientFactory: Successfully created connection to spark-master/172.21.0.6:7077 after 19 ms (0 ms spent in bootstraps)
+[2025-07-07T01:59:02.703+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20250707015902-0007
+[2025-07-07T01:59:02.707+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44571.
+[2025-07-07T01:59:02.708+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO NettyBlockTransferService: Server created on 40aa9e29f527:44571
+[2025-07-07T01:59:02.709+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-07-07T01:59:02.716+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 40aa9e29f527, 44571, None)
+[2025-07-07T01:59:02.721+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO BlockManagerMasterEndpoint: Registering block manager 40aa9e29f527:44571 with 413.9 MiB RAM, BlockManagerId(driver, 40aa9e29f527, 44571, None)
+[2025-07-07T01:59:02.722+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 40aa9e29f527, 44571, None)
+[2025-07-07T01:59:02.723+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 40aa9e29f527, 44571, None)
+[2025-07-07T01:59:02.903+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:02 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2025-07-07T01:59:05.114+0000] {spark_submit.py:634} INFO - ----------Hadoop Config Check-----------
+[2025-07-07T01:59:05.199+0000] {spark_submit.py:634} INFO - yarn.nodemanager.amrmproxy.wait.uam-register.done = false
+[2025-07-07T01:59:05.201+0000] {spark_submit.py:634} INFO - yarn.federation.enabled = false
+[2025-07-07T01:59:05.201+0000] {spark_submit.py:634} INFO - yarn.nodemanager.log.trigger.delete.by-size.enabled = false
+[2025-07-07T01:59:05.201+0000] {spark_submit.py:634} INFO - mapreduce.job.emit-timeline-data = false
+[2025-07-07T01:59:05.202+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.leveldb-state-store.path = ${hadoop.tmp.dir}/yarn/system/rmstore
+[2025-07-07T01:59:05.202+0000] {spark_submit.py:634} INFO - yarn.federation.cache.class = org.apache.hadoop.yarn.server.federation.cache.FederationJCache
+[2025-07-07T01:59:05.203+0000] {spark_submit.py:634} INFO - yarn.nodemanager.health-checker.scripts = script
+[2025-07-07T01:59:05.203+0000] {spark_submit.py:634} INFO - yarn.minicluster.use-rpc = false
+[2025-07-07T01:59:05.204+0000] {spark_submit.py:634} INFO - yarn.webapp.api-service.enable = false
+[2025-07-07T01:59:05.204+0000] {spark_submit.py:634} INFO - fs.s3a.path.style.access = false
+[2025-07-07T01:59:05.204+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.file.impl = org.apache.hadoop.fs.local.LocalFs
+[2025-07-07T01:59:05.205+0000] {spark_submit.py:634} INFO - mapreduce.map.output.compress.codec = org.apache.hadoop.io.compress.DefaultCodec
+[2025-07-07T01:59:05.206+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.zk-client-ssl.enabled = false
+[2025-07-07T01:59:05.206+0000] {spark_submit.py:634} INFO - yarn.nodemanager.windows-container.memory-limit.enabled = false
+[2025-07-07T01:59:05.206+0000] {spark_submit.py:634} INFO - hadoop.security.group.mapping = org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback
+[2025-07-07T01:59:05.207+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.docker.image-update = false
+[2025-07-07T01:59:05.207+0000] {spark_submit.py:634} INFO - hadoop.http.sni.host.check.enabled = false
+[2025-07-07T01:59:05.208+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.admin.address = ${yarn.resourcemanager.hostname}:8033
+[2025-07-07T01:59:05.208+0000] {spark_submit.py:634} INFO - mapreduce.job.ubertask.enable = false
+[2025-07-07T01:59:05.209+0000] {spark_submit.py:634} INFO - yarn.app.mapreduce.am.webapp.https.enabled = false
+[2025-07-07T01:59:05.209+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.gs.impl = com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS
+[2025-07-07T01:59:05.209+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.ofs.impl = org.apache.hadoop.fs.ozone.RootedOzoneFileSystem
+[2025-07-07T01:59:05.209+0000] {spark_submit.py:634} INFO - adl.feature.ownerandgroup.enableupn = false
+[2025-07-07T01:59:05.210+0000] {spark_submit.py:634} INFO - yarn.nodemanager.amrmproxy.ha.enable = false
+[2025-07-07T01:59:05.210+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.recovery.enabled = false
+[2025-07-07T01:59:05.211+0000] {spark_submit.py:634} INFO - yarn.nodemanager.least-load-policy-selector.use-active-core = false
+[2025-07-07T01:59:05.211+0000] {spark_submit.py:634} INFO - ipc.cost-provider.impl = org.apache.hadoop.ipc.DefaultCostProvider
+[2025-07-07T01:59:05.212+0000] {spark_submit.py:634} INFO - yarn.timeline-service.reader.webapp.address = ${yarn.timeline-service.webapp.address}
+[2025-07-07T01:59:05.212+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.webapp.cross-origin.enabled = false
+[2025-07-07T01:59:05.212+0000] {spark_submit.py:634} INFO - yarn.scheduler.configuration.mutation.acl-policy.class = org.apache.hadoop.yarn.server.resourcemanager.scheduler.DefaultConfigurationMutationACLPolicy
+[2025-07-07T01:59:05.212+0000] {spark_submit.py:634} INFO - yarn.timeline-service.reader.webapp.https.address = ${yarn.timeline-service.webapp.https.address}
+[2025-07-07T01:59:05.213+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.proxy-user-privileges.enabled = false
+[2025-07-07T01:59:05.214+0000] {spark_submit.py:634} INFO - mapreduce.job.dfs.storage.capacity.kill-limit-exceed = false
+[2025-07-07T01:59:05.214+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.nodemanagers.heartbeat-interval-scaling-enable = false
+[2025-07-07T01:59:05.214+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.placement-constraints.handler = disabled
+[2025-07-07T01:59:05.215+0000] {spark_submit.py:634} INFO - yarn.nodemanager.container-log-monitor.enable = false
+[2025-07-07T01:59:05.215+0000] {spark_submit.py:634} INFO - yarn.nodemanager.linux-container-executor.cgroups.mount = false
+[2025-07-07T01:59:05.215+0000] {spark_submit.py:634} INFO - yarn.sharedcache.checksum.algo.impl = org.apache.hadoop.yarn.sharedcache.ChecksumSHA256Impl
+[2025-07-07T01:59:05.215+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.policy.generator.readonly = false
+[2025-07-07T01:59:05.216+0000] {spark_submit.py:634} INFO - fs.s3a.select.output.csv.quote.fields = always
+[2025-07-07T01:59:05.216+0000] {spark_submit.py:634} INFO - mapreduce.job.classloader = false
+[2025-07-07T01:59:05.216+0000] {spark_submit.py:634} INFO - yarn.log-aggregation-enable = false
+[2025-07-07T01:59:05.216+0000] {spark_submit.py:634} INFO - yarn.router.webapp.appsinfo-enabled = false
+[2025-07-07T01:59:05.216+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.resource-profiles.enabled = false
+[2025-07-07T01:59:05.217+0000] {spark_submit.py:634} INFO - yarn.nodemanager.numa-awareness.read-topology = false
+[2025-07-07T01:59:05.217+0000] {spark_submit.py:634} INFO - yarn.timeline-service.entity-group-fs-store.done-dir = /tmp/entity-file-history/done/
+[2025-07-07T01:59:05.217+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.https.impl = org.apache.hadoop.fs.http.HttpsFileSystem
+[2025-07-07T01:59:05.218+0000] {spark_submit.py:634} INFO - io.erasurecode.codec.rs-legacy.rawcoders = rs-legacy_java
+[2025-07-07T01:59:05.218+0000] {spark_submit.py:634} INFO - yarn.router.subcluster.cleaner.interval.time = 60s
+[2025-07-07T01:59:05.218+0000] {spark_submit.py:634} INFO - mapreduce.fileoutputcommitter.task.cleanup.enabled = false
+[2025-07-07T01:59:05.219+0000] {spark_submit.py:634} INFO - yarn.timeline-service.entity-group-fs-store.with-user-dir = false
+[2025-07-07T01:59:05.219+0000] {spark_submit.py:634} INFO - mapreduce.outputcommitter.factory.scheme.s3a = org.apache.hadoop.fs.s3a.commit.S3ACommitterFactory
+[2025-07-07T01:59:05.220+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.viewfs.impl = org.apache.hadoop.fs.viewfs.ViewFs
+[2025-07-07T01:59:05.220+0000] {spark_submit.py:634} INFO - yarn.timeline-service.entity-group-fs-store.active-dir = /tmp/entity-file-history/active
+[2025-07-07T01:59:05.221+0000] {spark_submit.py:634} INFO - fs.s3a.impl = org.apache.hadoop.fs.s3a.S3AFileSystem
+[2025-07-07T01:59:05.221+0000] {spark_submit.py:634} INFO - io.compression.codec.bzip2.library = system-native
+[2025-07-07T01:59:05.222+0000] {spark_submit.py:634} INFO - hadoop.metrics.jvm.use-thread-mxbean = false
+[2025-07-07T01:59:05.222+0000] {spark_submit.py:634} INFO - yarn.nodemanager.resource.count-logical-processors-as-cores = false
+[2025-07-07T01:59:05.222+0000] {spark_submit.py:634} INFO - mapreduce.outputcommitter.factory.scheme.gs = org.apache.hadoop.mapreduce.lib.output.committer.manifest.ManifestCommitterFactory
+[2025-07-07T01:59:05.222+0000] {spark_submit.py:634} INFO - yarn.timeline-service.client.best-effort = false
+[2025-07-07T01:59:05.223+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.zk-state-store.parent-path = /rmstore
+[2025-07-07T01:59:05.224+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.wasbs.impl = org.apache.hadoop.fs.azure.Wasbs
+[2025-07-07T01:59:05.225+0000] {spark_submit.py:634} INFO - yarn.nodemanager.log-aggregation.policy.class = org.apache.hadoop.yarn.server.nodemanager.containermanager.logaggregation.AllContainerLogAggregationPolicy
+[2025-07-07T01:59:05.226+0000] {spark_submit.py:634} INFO - hadoop.security.crypto.codec.classes.sm4.ctr.nopadding = org.apache.hadoop.crypto.OpensslSm4CtrCryptoCodec, org.apache.hadoop.crypto.JceSm4CtrCryptoCodec
+[2025-07-07T01:59:05.226+0000] {spark_submit.py:634} INFO - mapreduce.task.profile.map.params = ${mapreduce.task.profile.params}
+[2025-07-07T01:59:05.227+0000] {spark_submit.py:634} INFO - yarn.federation.failover.random.order = false
+[2025-07-07T01:59:05.227+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.sandbox-mode = disabled
+[2025-07-07T01:59:05.227+0000] {spark_submit.py:634} INFO - yarn.nodemanager.aux-services.manifest.enabled = false
+[2025-07-07T01:59:05.227+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.file.impl = org.apache.hadoop.fs.LocalFileSystem
+[2025-07-07T01:59:05.228+0000] {spark_submit.py:634} INFO - yarn.federation.state-store.class = org.apache.hadoop.yarn.server.federation.store.impl.MemoryFederationStateStore
+[2025-07-07T01:59:05.228+0000] {spark_submit.py:634} INFO - yarn.sharedcache.app-checker.class = org.apache.hadoop.yarn.server.sharedcachemanager.RemoteAppChecker
+[2025-07-07T01:59:05.228+0000] {spark_submit.py:634} INFO - yarn.app.mapreduce.am.staging-dir = /tmp/hadoop-yarn/staging
+[2025-07-07T01:59:05.229+0000] {spark_submit.py:634} INFO - fs.s3a.committer.staging.tmp.path = tmp/staging
+[2025-07-07T01:59:05.229+0000] {spark_submit.py:634} INFO - yarn.nodemanager.recovery.enabled = false
+[2025-07-07T01:59:05.230+0000] {spark_submit.py:634} INFO - hadoop.security.group.mapping.ldap.ssl = false
+[2025-07-07T01:59:05.230+0000] {spark_submit.py:634} INFO - yarn.nodemanager.container-monitor.procfs-tree.smaps-based-rss.enabled = false
+[2025-07-07T01:59:05.230+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.swebhdfs.impl = org.apache.hadoop.hdfs.web.SWebHdfsFileSystem
+[2025-07-07T01:59:05.231+0000] {spark_submit.py:634} INFO - yarn.webapp.filter-entity-list-by-user = false
+[2025-07-07T01:59:05.231+0000] {spark_submit.py:634} INFO - hadoop.security.crypto.codec.classes.aes.ctr.nopadding = org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec, org.apache.hadoop.crypto.JceAesCtrCryptoCodec
+[2025-07-07T01:59:05.231+0000] {spark_submit.py:634} INFO - hadoop.ssl.server.conf = ssl-server.xml
+[2025-07-07T01:59:05.232+0000] {spark_submit.py:634} INFO - hadoop.http.authentication.signature.secret.file = ${user.home}/hadoop-http-auth-signature-secret
+[2025-07-07T01:59:05.280+0000] {spark_submit.py:634} INFO - yarn.nodemanager.log-dirs = ${yarn.log.dir}/userlogs
+[2025-07-07T01:59:05.280+0000] {spark_submit.py:634} INFO - yarn.node-attribute.fs-store.impl.class = org.apache.hadoop.yarn.server.resourcemanager.nodelabels.FileSystemNodeAttributeStore
+[2025-07-07T01:59:05.281+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.recovery.store.class = org.apache.hadoop.mapreduce.v2.hs.HistoryServerFileSystemStateStoreService
+[2025-07-07T01:59:05.281+0000] {spark_submit.py:634} INFO - yarn.nodemanager.recovery.supervised = false
+[2025-07-07T01:59:05.281+0000] {spark_submit.py:634} INFO - yarn.nodemanager.amrmproxy.interceptor-class.pipeline = org.apache.hadoop.yarn.server.nodemanager.amrmproxy.DefaultRequestInterceptor
+[2025-07-07T01:59:05.282+0000] {spark_submit.py:634} INFO - hadoop.http.jmx.nan-filter.enabled = false
+[2025-07-07T01:59:05.282+0000] {spark_submit.py:634} INFO - ipc.[port_number].callqueue.overflow.trigger.failover = false
+[2025-07-07T01:59:05.282+0000] {spark_submit.py:634} INFO - ipc.client.low-latency = false
+[2025-07-07T01:59:05.282+0000] {spark_submit.py:634} INFO - yarn.nodemanager.address = ${yarn.nodemanager.hostname}:0
+[2025-07-07T01:59:05.282+0000] {spark_submit.py:634} INFO - yarn.scheduler.queue-placement-rules = user-group
+[2025-07-07T01:59:05.283+0000] {spark_submit.py:634} INFO - yarn.timeline-service.address = ${yarn.timeline-service.hostname}:10200
+[2025-07-07T01:59:05.283+0000] {spark_submit.py:634} INFO - yarn.sharedcache.enabled = false
+[2025-07-07T01:59:05.284+0000] {spark_submit.py:634} INFO - yarn.timeline-service.http-cross-origin.enabled = false
+[2025-07-07T01:59:05.284+0000] {spark_submit.py:634} INFO - yarn.router.interceptor.user-thread-pool.allow-core-thread-time-out = false
+[2025-07-07T01:59:05.285+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.application-tag-based-placement.enable = false
+[2025-07-07T01:59:05.285+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.reservation-system.enable = false
+[2025-07-07T01:59:05.285+0000] {spark_submit.py:634} INFO - yarn.router.interceptor.user-thread-pool.keep-alive-time = 30s
+[2025-07-07T01:59:05.286+0000] {spark_submit.py:634} INFO - hadoop.registry.secure = false
+[2025-07-07T01:59:05.286+0000] {spark_submit.py:634} INFO - fs.wasb.impl = org.apache.hadoop.fs.azure.NativeAzureFileSystem
+[2025-07-07T01:59:05.286+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.http.impl = org.apache.hadoop.fs.http.HttpFileSystem
+[2025-07-07T01:59:05.287+0000] {spark_submit.py:634} INFO - yarn.timeline-service.http-authentication.type = simple
+[2025-07-07T01:59:05.287+0000] {spark_submit.py:634} INFO - hadoop.prometheus.endpoint.enabled = false
+[2025-07-07T01:59:05.287+0000] {spark_submit.py:634} INFO - ipc.client.bind.wildcard.addr = false
+[2025-07-07T01:59:05.288+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.fail-fast = ${yarn.fail-fast}
+[2025-07-07T01:59:05.288+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.resource-profiles.source-file = resource-profiles.json
+[2025-07-07T01:59:05.289+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.docker.privileged-containers.allowed = false
+[2025-07-07T01:59:05.290+0000] {spark_submit.py:634} INFO - hadoop.security.secure.random.impl = org.apache.hadoop.crypto.random.OpensslSecureRandom
+[2025-07-07T01:59:05.290+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.hdfs.impl = org.apache.hadoop.hdfs.DistributedFileSystem
+[2025-07-07T01:59:05.290+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.fs.state-store.uri = ${hadoop.tmp.dir}/yarn/system/rmstore
+[2025-07-07T01:59:05.290+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.adl.impl = org.apache.hadoop.fs.adl.Adl
+[2025-07-07T01:59:05.291+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.wasb.impl = org.apache.hadoop.fs.azure.Wasb
+[2025-07-07T01:59:05.291+0000] {spark_submit.py:634} INFO - ipc.backoff.enable = false
+[2025-07-07T01:59:05.291+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.address = ${yarn.resourcemanager.hostname}:8032
+[2025-07-07T01:59:05.291+0000] {spark_submit.py:634} INFO - ipc.[port_number].identity-provider.impl = org.apache.hadoop.ipc.UserIdentityProvider
+[2025-07-07T01:59:05.292+0000] {spark_submit.py:634} INFO - fs.azure.secure.mode = false
+[2025-07-07T01:59:05.292+0000] {spark_submit.py:634} INFO - yarn.nodemanager.collector-service.address = ${yarn.nodemanager.hostname}:8048
+[2025-07-07T01:59:05.292+0000] {spark_submit.py:634} INFO - fs.abfss.impl = org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+[2025-07-07T01:59:05.293+0000] {spark_submit.py:634} INFO - yarn.nodemanager.linux-container-executor.resources-handler.class = org.apache.hadoop.yarn.server.nodemanager.util.DefaultLCEResourcesHandler
+[2025-07-07T01:59:05.293+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.enable-node-untracked-without-include-path = false
+[2025-07-07T01:59:05.293+0000] {spark_submit.py:634} INFO - hadoop.security.authentication = simple
+[2025-07-07T01:59:05.294+0000] {spark_submit.py:634} INFO - mapreduce.task.files.preserve.failedtasks = false
+[2025-07-07T01:59:05.295+0000] {spark_submit.py:634} INFO - yarn.router.webapp.cross-origin.enabled = false
+[2025-07-07T01:59:05.295+0000] {spark_submit.py:634} INFO - fs.s3a.multipart.purge = false
+[2025-07-07T01:59:05.295+0000] {spark_submit.py:634} INFO - fs.s3a.connection.establish.timeout = 30s
+[2025-07-07T01:59:05.295+0000] {spark_submit.py:634} INFO - yarn.rm.system-metrics-publisher.emit-container-events = false
+[2025-07-07T01:59:05.296+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.auto-update.containers = false
+[2025-07-07T01:59:05.296+0000] {spark_submit.py:634} INFO - yarn.scheduler.configuration.leveldb-store.path = ${hadoop.tmp.dir}/yarn/system/confstore
+[2025-07-07T01:59:05.296+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.webapp.rest-csrf.enabled = false
+[2025-07-07T01:59:05.297+0000] {spark_submit.py:634} INFO - hadoop.http.authentication.type = simple
+[2025-07-07T01:59:05.297+0000] {spark_submit.py:634} INFO - yarn.nodemanager.dispatcher.metric.enable = false
+[2025-07-07T01:59:05.297+0000] {spark_submit.py:634} INFO - yarn.nodemanager.numa-awareness.enabled = false
+[2025-07-07T01:59:05.300+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.webhdfs.impl = org.apache.hadoop.fs.WebHdfs
+[2025-07-07T01:59:05.302+0000] {spark_submit.py:634} INFO - yarn.timeline-service.webapp.https.address = ${yarn.timeline-service.hostname}:8190
+[2025-07-07T01:59:05.302+0000] {spark_submit.py:634} INFO - fs.abfs.impl = org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+[2025-07-07T01:59:05.302+0000] {spark_submit.py:634} INFO - yarn.registry.class = org.apache.hadoop.registry.client.impl.FSRegistryOperationsService
+[2025-07-07T01:59:05.302+0000] {spark_submit.py:634} INFO - yarn.nodemanager.resource.memory.enabled = false
+[2025-07-07T01:59:05.302+0000] {spark_submit.py:634} INFO - dfs.client.ignore.namenode.default.kms.uri = false
+[2025-07-07T01:59:05.303+0000] {spark_submit.py:634} INFO - hadoop.registry.zk.root = /registry
+[2025-07-07T01:59:05.304+0000] {spark_submit.py:634} INFO - yarn.nodemanager.amrmproxy.enabled = false
+[2025-07-07T01:59:05.305+0000] {spark_submit.py:634} INFO - yarn.nodemanager.remote-app-log-dir-suffix = logs
+[2025-07-07T01:59:05.306+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.principal = jhs/_HOST@REALM.TLD
+[2025-07-07T01:59:05.307+0000] {spark_submit.py:634} INFO - yarn.federation.state-store.heartbeat.initial-delay = 30s
+[2025-07-07T01:59:05.307+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.application.cleaner.class = org.apache.hadoop.yarn.server.globalpolicygenerator.applicationcleaner.DefaultApplicationCleaner
+[2025-07-07T01:59:05.309+0000] {spark_submit.py:634} INFO - fs.s3a.accesspoint.required = false
+[2025-07-07T01:59:05.310+0000] {spark_submit.py:634} INFO - fs.azure.authorization = false
+[2025-07-07T01:59:05.310+0000] {spark_submit.py:634} INFO - mapreduce.task.ping-for-liveliness-check.enabled = false
+[2025-07-07T01:59:05.310+0000] {spark_submit.py:634} INFO - ipc.callqueue.overflow.trigger.failover = false
+[2025-07-07T01:59:05.311+0000] {spark_submit.py:634} INFO - mapreduce.task.profile.params = -agentlib:hprof=cpu=samples,heap=sites,force=n,thread=y,verbose=n,file=%s
+[2025-07-07T01:59:05.311+0000] {spark_submit.py:634} INFO - yarn.acl.reservation-enable = false
+[2025-07-07T01:59:05.312+0000] {spark_submit.py:634} INFO - fs.azure.local.sas.key.mode = false
+[2025-07-07T01:59:05.312+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.docker.host-pid-namespace.allowed = false
+[2025-07-07T01:59:05.312+0000] {spark_submit.py:634} INFO - yarn.node-labels.enabled = false
+[2025-07-07T01:59:05.313+0000] {spark_submit.py:634} INFO - yarn.nodemanager.resource.detect-hardware-capabilities = false
+[2025-07-07T01:59:05.313+0000] {spark_submit.py:634} INFO - yarn.federation.state-store.sql.pool-name = YARN-Federation-DataBasePool
+[2025-07-07T01:59:05.313+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.scheduler.class = org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler
+[2025-07-07T01:59:05.314+0000] {spark_submit.py:634} INFO - yarn.is.minicluster = false
+[2025-07-07T01:59:05.314+0000] {spark_submit.py:634} INFO - fs.s3a.threads.keepalivetime = 60s
+[2025-07-07T01:59:05.314+0000] {spark_submit.py:634} INFO - mapreduce.shuffle.connection-keep-alive.enable = false
+[2025-07-07T01:59:05.314+0000] {spark_submit.py:634} INFO - hadoop.security.groups.shell.command.timeout = 0s
+[2025-07-07T01:59:05.314+0000] {spark_submit.py:634} INFO - yarn.nodemanager.disk-validator = basic
+[2025-07-07T01:59:05.314+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.scheduler.address = ${yarn.resourcemanager.hostname}:8030
+[2025-07-07T01:59:05.315+0000] {spark_submit.py:634} INFO - ipc.[port_number].decay-scheduler.backoff.responsetime.thresholds = 10s,20s,30s,40s
+[2025-07-07T01:59:05.315+0000] {spark_submit.py:634} INFO - hadoop.service.shutdown.timeout = 30s
+[2025-07-07T01:59:05.315+0000] {spark_submit.py:634} INFO - mapreduce.shuffle.ssl.enabled = false
+[2025-07-07T01:59:05.316+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.ha.enabled = false
+[2025-07-07T01:59:05.316+0000] {spark_submit.py:634} INFO - yarn.federation.state-store.clean-up-retry-sleep-time = 1s
+[2025-07-07T01:59:05.316+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.abfs.impl = org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem
+[2025-07-07T01:59:05.317+0000] {spark_submit.py:634} INFO - hadoop.http.cross-origin.enabled = false
+[2025-07-07T01:59:05.317+0000] {spark_submit.py:634} INFO - yarn.scheduler.include-port-in-node-name = false
+[2025-07-07T01:59:05.317+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.state-store.max-completed-applications = ${yarn.resourcemanager.max-completed-applications}
+[2025-07-07T01:59:05.317+0000] {spark_submit.py:634} INFO - fs.s3a.ssl.channel.mode = default_jsse
+[2025-07-07T01:59:05.318+0000] {spark_submit.py:634} INFO - fs.s3a.change.detection.mode = server
+[2025-07-07T01:59:05.318+0000] {spark_submit.py:634} INFO - fs.s3a.buffer.dir = ${env.LOCAL_DIRS:-${hadoop.tmp.dir}}/s3a
+[2025-07-07T01:59:05.319+0000] {spark_submit.py:634} INFO - yarn.timeline-service.state-store-class = org.apache.hadoop.yarn.server.timeline.recovery.LeveldbTimelineStateStore
+[2025-07-07T01:59:05.319+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.opportunistic-container-allocation.enabled = false
+[2025-07-07T01:59:05.319+0000] {spark_submit.py:634} INFO - hadoop.security.group.mapping.ldap.search.filter.group = (objectClass=group)
+[2025-07-07T01:59:05.320+0000] {spark_submit.py:634} INFO - hadoop.security.group.mapping.ldap.search.filter.user = (&(objectClass=user)(sAMAccountName={0}))
+[2025-07-07T01:59:05.320+0000] {spark_submit.py:634} INFO - ipc.server.log.slow.rpc = false
+[2025-07-07T01:59:05.320+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.recovery.store.leveldb.path = ${hadoop.tmp.dir}/mapred/history/recoverystore
+[2025-07-07T01:59:05.320+0000] {spark_submit.py:634} INFO - yarn.sharedcache.store.class = org.apache.hadoop.yarn.server.sharedcachemanager.store.InMemorySCMStore
+[2025-07-07T01:59:05.320+0000] {spark_submit.py:634} INFO - yarn.app.mapreduce.am.webapp.https.client.auth = false
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - yarn.nodemanager.windows-container.cpu-limit.enabled = false
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.ftp.impl = org.apache.hadoop.fs.ftp.FTPFileSystem
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - ipc.[port_number].decay-scheduler.backoff.responsetime.enable = false
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - yarn.timeline-service.hbase.coprocessor.jar.hdfs.location = /hbase/coprocessor/hadoop-yarn-server-timelineservice.jar
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.scheduler.monitor.policies = org.apache.hadoop.yarn.server.resourcemanager.monitor.capacity.ProportionalCapacityPreemptionPolicy
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - yarn.router.webapp.interceptor-class.pipeline = org.apache.hadoop.yarn.server.router.webapp.DefaultRequestInterceptorREST
+[2025-07-07T01:59:05.321+0000] {spark_submit.py:634} INFO - io.erasurecode.codec.rs.rawcoders = rs_native,rs_java
+[2025-07-07T01:59:05.322+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.delegation-token-renewer.thread-retry-interval = 60s
+[2025-07-07T01:59:05.323+0000] {spark_submit.py:634} INFO - mapreduce.cluster.acls.enabled = false
+[2025-07-07T01:59:05.323+0000] {spark_submit.py:634} INFO - mapreduce.outputcommitter.factory.scheme.abfs = org.apache.hadoop.fs.azurebfs.commit.AzureManifestCommitterFactory
+[2025-07-07T01:59:05.323+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.docker.default-container-network = host
+[2025-07-07T01:59:05.324+0000] {spark_submit.py:634} INFO - mapreduce.app-submission.cross-platform = false
+[2025-07-07T01:59:05.324+0000] {spark_submit.py:634} INFO - yarn.timeline-service.entity-group-fs-store.cache-store-class = org.apache.hadoop.yarn.server.timeline.MemoryTimelineStore
+[2025-07-07T01:59:05.324+0000] {spark_submit.py:634} INFO - yarn.scheduler.configuration.fs.path = file://${hadoop.tmp.dir}/yarn/system/schedconf
+[2025-07-07T01:59:05.324+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.o3fs.impl = org.apache.hadoop.fs.ozone.OzoneFileSystem
+[2025-07-07T01:59:05.324+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.abfss.impl = org.apache.hadoop.fs.azurebfs.Abfss
+[2025-07-07T01:59:05.325+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.recovery.store.fs.uri = ${hadoop.tmp.dir}/mapred/history/recoverystore
+[2025-07-07T01:59:05.325+0000] {spark_submit.py:634} INFO - io.compression.codec.lzo.class = org.apache.hadoop.io.compress.LzoCodec
+[2025-07-07T01:59:05.325+0000] {spark_submit.py:634} INFO - yarn.router.submit.interval.time = 10ms
+[2025-07-07T01:59:05.325+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.hdfs-hash-file = /runc-root/image-tag-to-hash
+[2025-07-07T01:59:05.326+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.webapp.connect-timeout = 30s
+[2025-07-07T01:59:05.344+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.policy.generator.class = org.apache.hadoop.yarn.server.globalpolicygenerator.policygenerator.NoOpGlobalPolicy
+[2025-07-07T01:59:05.345+0000] {spark_submit.py:634} INFO - hadoop.security.instrumentation.requires.admin = false
+[2025-07-07T01:59:05.345+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.done-dir = ${yarn.app.mapreduce.am.staging-dir}/history/done
+[2025-07-07T01:59:05.346+0000] {spark_submit.py:634} INFO - yarn.fail-fast = false
+[2025-07-07T01:59:05.346+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.placement-constraints.algorithm.class = org.apache.hadoop.yarn.server.resourcemanager.scheduler.constraint.algorithm.DefaultPlacementAlgorithm
+[2025-07-07T01:59:05.347+0000] {spark_submit.py:634} INFO - io.skip.checksum.errors = false
+[2025-07-07T01:59:05.379+0000] {spark_submit.py:634} INFO - yarn.acl.enable = false
+[2025-07-07T01:59:05.379+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.swebhdfs.impl = org.apache.hadoop.fs.SWebHdfs
+[2025-07-07T01:59:05.380+0000] {spark_submit.py:634} INFO - fs.azure.buffer.dir = ${env.LOCAL_DIRS:-${hadoop.tmp.dir}}/abfs
+[2025-07-07T01:59:05.381+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.docker.delayed-removal.allowed = false
+[2025-07-07T01:59:05.381+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.always-scan-user-dir = false
+[2025-07-07T01:59:05.381+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.delegation-token.always-cancel = false
+[2025-07-07T01:59:05.382+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.webhdfs.impl = org.apache.hadoop.hdfs.web.WebHdfsFileSystem
+[2025-07-07T01:59:05.382+0000] {spark_submit.py:634} INFO - hadoop.security.resolver.impl = org.apache.hadoop.net.DNSDomainNameResolver
+[2025-07-07T01:59:05.382+0000] {spark_submit.py:634} INFO - hadoop.ssl.client.conf = ssl-client.xml
+[2025-07-07T01:59:05.382+0000] {spark_submit.py:634} INFO - yarn.sharedcache.root-dir = /sharedcache
+[2025-07-07T01:59:05.382+0000] {spark_submit.py:634} INFO - hadoop.security.groups.cache.background.reload = false
+[2025-07-07T01:59:05.383+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.s3a.impl = org.apache.hadoop.fs.s3a.S3AFileSystem
+[2025-07-07T01:59:05.383+0000] {spark_submit.py:634} INFO - yarn.timeline-service.webapp.address = ${yarn.timeline-service.hostname}:8188
+[2025-07-07T01:59:05.384+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.ftp.impl = org.apache.hadoop.fs.ftp.FtpFs
+[2025-07-07T01:59:05.384+0000] {spark_submit.py:634} INFO - mapreduce.job.reduce.shuffle.consumer.plugin.class = org.apache.hadoop.mapreduce.task.reduce.Shuffle
+[2025-07-07T01:59:05.384+0000] {spark_submit.py:634} INFO - fs.trash.clean.trashroot.enable = false
+[2025-07-07T01:59:05.385+0000] {spark_submit.py:634} INFO - hadoop.shell.missing.defaultFs.warning = false
+[2025-07-07T01:59:05.385+0000] {spark_submit.py:634} INFO - hadoop.http.authentication.kerberos.keytab = ${user.home}/hadoop.keytab
+[2025-07-07T01:59:05.386+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.ofs.impl = org.apache.hadoop.fs.ozone.RootedOzFs
+[2025-07-07T01:59:05.386+0000] {spark_submit.py:634} INFO - net.topology.node.switch.mapping.impl = org.apache.hadoop.net.ScriptBasedMapping
+[2025-07-07T01:59:05.386+0000] {spark_submit.py:634} INFO - hadoop.kerberos.keytab.login.autorenewal.enabled = false
+[2025-07-07T01:59:05.387+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.runc.allowed-container-networks = host,none,bridge
+[2025-07-07T01:59:05.387+0000] {spark_submit.py:634} INFO - yarn.nodemanager.localizer.address = ${yarn.nodemanager.hostname}:8040
+[2025-07-07T01:59:05.387+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.oss.impl = org.apache.hadoop.fs.aliyun.oss.AliyunOSSFileSystem
+[2025-07-07T01:59:05.387+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.wasb.impl = org.apache.hadoop.fs.azure.NativeAzureFileSystem
+[2025-07-07T01:59:05.387+0000] {spark_submit.py:634} INFO - fs.wasbs.impl = org.apache.hadoop.fs.azure.NativeAzureFileSystem$Secure
+[2025-07-07T01:59:05.388+0000] {spark_submit.py:634} INFO - hadoop.ssl.keystores.factory.class = org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory
+[2025-07-07T01:59:05.388+0000] {spark_submit.py:634} INFO - yarn.nodemanager.linux-container-executor.cgroups.strict-resource-usage = false
+[2025-07-07T01:59:05.389+0000] {spark_submit.py:634} INFO - fs.ftp.impl = org.apache.hadoop.fs.ftp.FTPFileSystem
+[2025-07-07T01:59:05.389+0000] {spark_submit.py:634} INFO - yarn.timeline-service.store-class = org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore
+[2025-07-07T01:59:05.389+0000] {spark_submit.py:634} INFO - hadoop.tmp.dir = /tmp/hadoop-${user.name}
+[2025-07-07T01:59:05.389+0000] {spark_submit.py:634} INFO - fs.s3a.etag.checksum.enabled = false
+[2025-07-07T01:59:05.389+0000] {spark_submit.py:634} INFO - fs.s3a.retry.interval = 500ms
+[2025-07-07T01:59:05.390+0000] {spark_submit.py:634} INFO - yarn.timeline-service.recovery.enabled = false
+[2025-07-07T01:59:05.390+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.runc.host-pid-namespace.allowed = false
+[2025-07-07T01:59:05.390+0000] {spark_submit.py:634} INFO - fs.s3a.select.errors.include.sql = false
+[2025-07-07T01:59:05.390+0000] {spark_submit.py:634} INFO - yarn.webapp.ui2.enable = false
+[2025-07-07T01:59:05.391+0000] {spark_submit.py:634} INFO - yarn.nodemanager.elastic-memory-control.oom-handler = org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.DefaultOOMHandler
+[2025-07-07T01:59:05.391+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.o3fs.impl = org.apache.hadoop.fs.ozone.OzFs
+[2025-07-07T01:59:05.391+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.application.cleaner.interval-ms = -1s
+[2025-07-07T01:59:05.391+0000] {spark_submit.py:634} INFO - mapreduce.output.fileoutputformat.compress = false
+[2025-07-07T01:59:05.391+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.subcluster.cleaner.interval-ms = -1ms
+[2025-07-07T01:59:05.392+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.har.impl = org.apache.hadoop.fs.HarFs
+[2025-07-07T01:59:05.392+0000] {spark_submit.py:634} INFO - yarn.nodemanager.webapp.address = ${yarn.nodemanager.hostname}:8042
+[2025-07-07T01:59:05.393+0000] {spark_submit.py:634} INFO - yarn.timeline-service.webapp.rest-csrf.enabled = false
+[2025-07-07T01:59:05.393+0000] {spark_submit.py:634} INFO - yarn.timeline-service.reader.class = org.apache.hadoop.yarn.server.timelineservice.storage.HBaseTimelineReaderImpl
+[2025-07-07T01:59:05.394+0000] {spark_submit.py:634} INFO - yarn.app.mapreduce.am.staging-dir.erasurecoding.enabled = false
+[2025-07-07T01:59:05.396+0000] {spark_submit.py:634} INFO - yarn.timeline-service.writer.class = org.apache.hadoop.yarn.server.timelineservice.storage.HBaseTimelineWriterImpl
+[2025-07-07T01:59:05.397+0000] {spark_submit.py:634} INFO - yarn.federation.state-store.sql.conn-time-out = 10s
+[2025-07-07T01:59:05.398+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin = org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.runc.ImageTagToManifestPlugin
+[2025-07-07T01:59:05.398+0000] {spark_submit.py:634} INFO - yarn.timeline-service.entity-group-fs-store.summary-store = org.apache.hadoop.yarn.server.timeline.LeveldbTimelineStore
+[2025-07-07T01:59:05.398+0000] {spark_submit.py:634} INFO - mapreduce.output.fileoutputformat.compress.codec = org.apache.hadoop.io.compress.DefaultCodec
+[2025-07-07T01:59:05.398+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.gs.impl = com.google.cloud.hadoop.fs.gcs.GoogleHadoopFS
+[2025-07-07T01:59:05.398+0000] {spark_submit.py:634} INFO - fs.adl.impl = org.apache.hadoop.fs.adl.AdlFileSystem
+[2025-07-07T01:59:05.399+0000] {spark_submit.py:634} INFO - yarn.router.rmadmin.interceptor-class.pipeline = org.apache.hadoop.yarn.server.router.rmadmin.DefaultRMAdminRequestInterceptor
+[2025-07-07T01:59:05.401+0000] {spark_submit.py:634} INFO - yarn.apps.cache.enable = false
+[2025-07-07T01:59:05.401+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.abfs.impl = org.apache.hadoop.fs.azurebfs.Abfs
+[2025-07-07T01:59:05.402+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.delegation-token-renewer.thread-timeout = 60s
+[2025-07-07T01:59:05.402+0000] {spark_submit.py:634} INFO - yarn.federation.non-ha.enabled = false
+[2025-07-07T01:59:05.403+0000] {spark_submit.py:634} INFO - io.compression.codec.lz4.use.lz4hc = false
+[2025-07-07T01:59:05.403+0000] {spark_submit.py:634} INFO - yarn.nodemanager.health-checker.run-before-startup = false
+[2025-07-07T01:59:05.403+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.intermediate-done-dir = ${yarn.app.mapreduce.am.staging-dir}/history/done_intermediate
+[2025-07-07T01:59:05.406+0000] {spark_submit.py:634} INFO - io.serializations = org.apache.hadoop.io.serializer.WritableSerialization, org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization, org.apache.hadoop.io.serializer.avro.AvroReflectSerialization
+[2025-07-07T01:59:05.408+0000] {spark_submit.py:634} INFO - yarn.dispatcher.print-thread-pool.keep-alive-time = 10s
+[2025-07-07T01:59:05.408+0000] {spark_submit.py:634} INFO - yarn.node-labels.fs-store.impl.class = org.apache.hadoop.yarn.nodelabels.FileSystemNodeLabelsStore
+[2025-07-07T01:59:05.408+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.webapp.rest-csrf.enabled = false
+[2025-07-07T01:59:05.409+0000] {spark_submit.py:634} INFO - yarn.nodemanager.container.stderr.pattern = {*stderr*,*STDERR*}
+[2025-07-07T01:59:05.409+0000] {spark_submit.py:634} INFO - ipc.[port_number].cost-provider.impl = org.apache.hadoop.ipc.DefaultCostProvider
+[2025-07-07T01:59:05.409+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.webapp.read-timeout = 30s
+[2025-07-07T01:59:05.410+0000] {spark_submit.py:634} INFO - fs.viewfs.overload.scheme.target.abfss.impl = org.apache.hadoop.fs.azurebfs.SecureAzureBlobFileSystem
+[2025-07-07T01:59:05.410+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.system-metrics-publisher.timeline-server-v1.enable-batch = false
+[2025-07-07T01:59:05.410+0000] {spark_submit.py:634} INFO - fs.client.resolve.topology.enabled = false
+[2025-07-07T01:59:05.410+0000] {spark_submit.py:634} INFO - mapreduce.job.map.output.collector.class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+[2025-07-07T01:59:05.410+0000] {spark_submit.py:634} INFO - fs.s3a.fast.upload.buffer = disk
+[2025-07-07T01:59:05.411+0000] {spark_submit.py:634} INFO - yarn.nodemanager.containers-launcher.class = org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainersLauncher
+[2025-07-07T01:59:05.411+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.scheduler.monitor.enable = false
+[2025-07-07T01:59:05.411+0000] {spark_submit.py:634} INFO - yarn.nodemanager.elastic-memory-control.enabled = false
+[2025-07-07T01:59:05.412+0000] {spark_submit.py:634} INFO - hadoop.security.authorization = false
+[2025-07-07T01:59:05.412+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.minicluster.fixed.ports = false
+[2025-07-07T01:59:05.413+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.store.class = org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore
+[2025-07-07T01:59:05.413+0000] {spark_submit.py:634} INFO - yarn.nodemanager.webapp.rest-csrf.enabled = false
+[2025-07-07T01:59:05.413+0000] {spark_submit.py:634} INFO - yarn.scheduler.configuration.zk-store.parent-path = /confstore
+[2025-07-07T01:59:05.413+0000] {spark_submit.py:634} INFO - ipc.[port_number].backoff.enable = false
+[2025-07-07T01:59:05.413+0000] {spark_submit.py:634} INFO - yarn.nodemanager.container-executor.class = org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor
+[2025-07-07T01:59:05.414+0000] {spark_submit.py:634} INFO - fs.s3a.retry.throttle.interval = 100ms
+[2025-07-07T01:59:05.414+0000] {spark_submit.py:634} INFO - ipc.identity-provider.impl = org.apache.hadoop.ipc.UserIdentityProvider
+[2025-07-07T01:59:05.414+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.submission-preprocessor.enabled = false
+[2025-07-07T01:59:05.414+0000] {spark_submit.py:634} INFO - yarn.nodemanager.least-load-policy-selector.enabled = false
+[2025-07-07T01:59:05.414+0000] {spark_submit.py:634} INFO - yarn.nodemanager.numa-awareness.numactl.cmd = /usr/bin/numactl
+[2025-07-07T01:59:05.415+0000] {spark_submit.py:634} INFO - yarn.nodemanager.distributed-scheduling.enabled = false
+[2025-07-07T01:59:05.415+0000] {spark_submit.py:634} INFO - ipc.client.fallback-to-simple-auth-allowed = false
+[2025-07-07T01:59:05.415+0000] {spark_submit.py:634} INFO - yarn.minicluster.fixed.ports = false
+[2025-07-07T01:59:05.415+0000] {spark_submit.py:634} INFO - yarn.nodemanager.remote-app-log-dir = /tmp/logs
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.recovery.enable = false
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.webapp.address = ${yarn.resourcemanager.hostname}:8088
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - fs.s3a.aws.credentials.provider =
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - org.apache.hadoop.fs.s3a.TemporaryAWSCredentialsProvider,
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider,
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - software.amazon.awssdk.auth.credentials.EnvironmentVariableCredentialsProvider,
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - org.apache.hadoop.fs.s3a.auth.IAMInstanceCredentialsProvider
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - 
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - yarn.nodemanager.resource-plugins.fpga.vendor-plugin.class = org.apache.hadoop.yarn.server.nodemanager.containermanager.resourceplugin.fpga.IntelFpgaOpenclPlugin
+[2025-07-07T01:59:05.416+0000] {spark_submit.py:634} INFO - yarn.timeline-service.enabled = false
+[2025-07-07T01:59:05.417+0000] {spark_submit.py:634} INFO - hadoop.http.cross-origin.allowed-headers = X-Requested-With,Content-Type,Accept,Origin
+[2025-07-07T01:59:05.417+0000] {spark_submit.py:634} INFO - mapreduce.task.profile = false
+[2025-07-07T01:59:05.417+0000] {spark_submit.py:634} INFO - mapreduce.job.token.tracking.ids.enabled = false
+[2025-07-07T01:59:05.417+0000] {spark_submit.py:634} INFO - fs.s3a.assumed.role.credentials.provider = org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider
+[2025-07-07T01:59:05.418+0000] {spark_submit.py:634} INFO - yarn.nodemanager.log-container-debug-info-on-error.enabled = false
+[2025-07-07T01:59:05.418+0000] {spark_submit.py:634} INFO - yarn.apps.cache.expire = 30s
+[2025-07-07T01:59:05.418+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.hdfs.impl = org.apache.hadoop.fs.Hdfs
+[2025-07-07T01:59:05.418+0000] {spark_submit.py:634} INFO - hadoop.http.filter.initializers = org.apache.hadoop.http.lib.StaticUserWebFilter
+[2025-07-07T01:59:05.418+0000] {spark_submit.py:634} INFO - yarn.webapp.filter-invalid-xml-chars = false
+[2025-07-07T01:59:05.419+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.docker.allowed-container-networks = host,none,bridge
+[2025-07-07T01:59:05.419+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.runc.manifest-to-resources-plugin = org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.runtime.runc.HdfsManifestToResourcesPlugin
+[2025-07-07T01:59:05.419+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.resource-tracker.address = ${yarn.resourcemanager.hostname}:8031
+[2025-07-07T01:59:05.419+0000] {spark_submit.py:634} INFO - rpc.metrics.quantile.enable = false
+[2025-07-07T01:59:05.419+0000] {spark_submit.py:634} INFO - yarn.federation.amrmproxy.register.uam.interval = 100ms
+[2025-07-07T01:59:05.419+0000] {spark_submit.py:634} INFO - yarn.federation.subcluster-resolver.class = org.apache.hadoop.yarn.server.federation.resolver.DefaultSubClusterResolverImpl
+[2025-07-07T01:59:05.422+0000] {spark_submit.py:634} INFO - yarn.router.clientrm.interceptor-class.pipeline = org.apache.hadoop.yarn.server.router.clientrm.DefaultClientRequestInterceptor
+[2025-07-07T01:59:05.422+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.system-metrics-publisher.enabled = false
+[2025-07-07T01:59:05.422+0000] {spark_submit.py:634} INFO - fs.s3a.connection.timeout = 200s
+[2025-07-07T01:59:05.422+0000] {spark_submit.py:634} INFO - hadoop.security.dns.log-slow-lookups.enabled = false
+[2025-07-07T01:59:05.423+0000] {spark_submit.py:634} INFO - yarn.nodemanager.pluggable-device-framework.enabled = false
+[2025-07-07T01:59:05.425+0000] {spark_submit.py:634} INFO - mapreduce.job.encrypted-intermediate-data = false
+[2025-07-07T01:59:05.425+0000] {spark_submit.py:634} INFO - yarn.nodemanager.webapp.cross-origin.enabled = false
+[2025-07-07T01:59:05.425+0000] {spark_submit.py:634} INFO - yarn.nodemanager.opportunistic-containers-use-pause-for-preemption = false
+[2025-07-07T01:59:05.479+0000] {spark_submit.py:634} INFO - yarn.minicluster.control-resource-monitoring = false
+[2025-07-07T01:59:05.479+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.resource-tracker.nm.ip-hostname-check = false
+[2025-07-07T01:59:05.479+0000] {spark_submit.py:634} INFO - hadoop.ssl.require.client.cert = false
+[2025-07-07T01:59:05.479+0000] {spark_submit.py:634} INFO - mapreduce.jobhistory.keytab = /etc/security/keytab/jhs.service.keytab
+[2025-07-07T01:59:05.483+0000] {spark_submit.py:634} INFO - yarn.intermediate-data-encryption.enable = false
+[2025-07-07T01:59:05.485+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.node-labels.am.allow-non-exclusive-allocation = false
+[2025-07-07T01:59:05.487+0000] {spark_submit.py:634} INFO - yarn.system-metrics-publisher.enabled = false
+[2025-07-07T01:59:05.488+0000] {spark_submit.py:634} INFO - fs.AbstractFileSystem.s3a.impl = org.apache.hadoop.fs.s3a.S3A
+[2025-07-07T01:59:05.488+0000] {spark_submit.py:634} INFO - yarn.client.load.resource-types.from-server = false
+[2025-07-07T01:59:05.490+0000] {spark_submit.py:634} INFO - mapreduce.job.sharedcache.mode = disabled
+[2025-07-07T01:59:05.490+0000] {spark_submit.py:634} INFO - mapreduce.job.hdfs-servers = ${fs.defaultFS}
+[2025-07-07T01:59:05.490+0000] {spark_submit.py:634} INFO - mapreduce.map.output.compress = false
+[2025-07-07T01:59:05.492+0000] {spark_submit.py:634} INFO - hadoop.registry.zk.quorum = localhost:2181
+[2025-07-07T01:59:05.492+0000] {spark_submit.py:634} INFO - mapreduce.jvm.system-properties-to-log = os.name,os.version,java.home,java.runtime.version,java.vendor,java.version,java.vm.name,java.class.path,java.io.tmpdir,user.dir,user.name
+[2025-07-07T01:59:05.492+0000] {spark_submit.py:634} INFO - hadoop.registry.system.acls = sasl:yarn@, sasl:mapred@, sasl:hdfs@
+[2025-07-07T01:59:05.493+0000] {spark_submit.py:634} INFO - yarn.nodemanager.resource-plugins.gpu.docker-plugin.nvidia-docker-v1.endpoint = http://localhost:3476/v1.0/docker/cli
+[2025-07-07T01:59:05.493+0000] {spark_submit.py:634} INFO - yarn.federation.gpg.webapp.cross-origin.enabled = false
+[2025-07-07T01:59:05.493+0000] {spark_submit.py:634} INFO - mapreduce.task.profile.reduce.params = ${mapreduce.task.profile.params}
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - hadoop.caller.context.enabled = false
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - hadoop.security.sensitive-config-keys =
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - secret$
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - password$
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - ssl.keystore.pass$
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - fs.s3a.server-side-encryption.key
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - fs.s3a.*.server-side-encryption.key
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - fs.s3a.encryption.algorithm
+[2025-07-07T01:59:05.494+0000] {spark_submit.py:634} INFO - fs.s3a.encryption.key
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.s3a.secret.key
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.s3a.*.secret.key
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.s3a.session.key
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.s3a.*.session.key
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.s3a.session.token
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.s3a.*.session.token
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.azure.account.key.*
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.azure.oauth2.*
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.adl.oauth2.*
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.gs.encryption.*
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.gs.proxy.*
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - fs.gs.auth.*
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - credential$
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - oauth.*secret
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - oauth.*password
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - oauth.*token
+[2025-07-07T01:59:05.495+0000] {spark_submit.py:634} INFO - hadoop.security.sensitive-config-keys
+[2025-07-07T01:59:05.496+0000] {spark_submit.py:634} INFO - 
+[2025-07-07T01:59:05.496+0000] {spark_submit.py:634} INFO - yarn.router.interceptor.allow-partial-result.enable = false
+[2025-07-07T01:59:05.496+0000] {spark_submit.py:634} INFO - yarn.resourcemanager.webapp.https.address = ${yarn.resourcemanager.hostname}:8090
+[2025-07-07T01:59:05.496+0000] {spark_submit.py:634} INFO - yarn.nodemanager.runtime.linux.runc.privileged-containers.allowed = false
+[2025-07-07T01:59:05.496+0000] {spark_submit.py:634} INFO - hadoop.domainname.resolver.impl = org.apache.hadoop.net.DNSDomainNameResolver
+[2025-07-07T01:59:06.299+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:06 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2025-07-07T01:59:06.310+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:06 WARN FileSystem: Failed to initialize filesystem s3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/4/15/0.parquet: java.lang.NumberFormatException: For input string: "60s"
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:06 WARN FileStreamSink: Assume no metadata directory. Error while looking for metadata directory in the path: s3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/4/15/0.parquet.
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - java.lang.NumberFormatException: For input string: "60s"
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at java.base/java.lang.Long.parseLong(Long.java:711)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at java.base/java.lang.Long.parseLong(Long.java:836)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.conf.Configuration.getLong(Configuration.java:1607)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.s3a.S3AUtils.longOption(S3AUtils.java:978)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.s3a.S3AFileSystem.initThreadPools(S3AFileSystem.java:747)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.s3a.S3AFileSystem.initialize(S3AFileSystem.java:517)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3615)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:172)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3716)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3667)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:557)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.hadoop.fs.Path.getFileSystem(Path.java:366)
+[2025-07-07T01:59:06.312+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.streaming.FileStreamSink$.hasMetadata(FileStreamSink.scala:55)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:381)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.ResolveDataSource.org$apache$spark$sql$catalyst$analysis$ResolveDataSource$$loadV1BatchSource(ResolveDataSource.scala:143)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.$anonfun$applyOrElse$2(ResolveDataSource.scala:61)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at scala.Option.getOrElse(Option.scala:201)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:61)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:45)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$3(AnalysisHelper.scala:139)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:86)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$1(AnalysisHelper.scala:139)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.allowInvokingTransformsInAnalyzer(AnalysisHelper.scala:416)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning(AnalysisHelper.scala:135)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning$(AnalysisHelper.scala:131)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUpWithPruning(LogicalPlan.scala:37)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp(AnalysisHelper.scala:112)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp$(AnalysisHelper.scala:111)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUp(LogicalPlan.scala:37)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:45)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:43)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$2(RuleExecutor.scala:242)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)
+[2025-07-07T01:59:06.313+0000] {spark_submit.py:634} INFO - at scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at scala.collection.immutable.List.foldLeft(List.scala:79)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1(RuleExecutor.scala:239)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1$adapted(RuleExecutor.scala:231)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at scala.collection.immutable.List.foreach(List.scala:334)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:231)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.Analyzer.org$apache$spark$sql$catalyst$analysis$Analyzer$$executeSameContext(Analyzer.scala:290)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$execute$1(Analyzer.scala:286)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.AnalysisContext$.withNewAnalysisContext(Analyzer.scala:234)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:286)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:249)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$executeAndTrack$1(RuleExecutor.scala:201)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.rules.RuleExecutor.executeAndTrack(RuleExecutor.scala:201)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:190)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)
+[2025-07-07T01:59:06.314+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at scala.util.Try$.apply(Try.scala:217)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.util.LazyTry.get(LazyTry.scala:58)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:109)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:58)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:457)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.classic.DataFrameReader.parquet(DataFrameReader.scala:306)
+[2025-07-07T01:59:06.315+0000] {spark_submit.py:634} INFO - at org.apache.spark.sql.classic.DataFrameReader.parquet(DataFrameReader.scala:58)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.Gateway.invoke(Gateway.java:282)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at py4j.ClientServerConnection.run(ClientServerConnection.java:108)
+[2025-07-07T01:59:06.316+0000] {spark_submit.py:634} INFO - at java.base/java.lang.Thread.run(Thread.java:840)
+[2025-07-07T01:59:06.319+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:06 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2025-07-07T01:59:06.321+0000] {spark_submit.py:634} INFO - 25/07/07 01:59:06 WARN FileSystem: Failed to initialize filesystem s3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/4/15/0.parquet: java.lang.NumberFormatException: For input string: "60s"
+[2025-07-07T01:59:06.328+0000] {spark_submit.py:634} INFO - Traceback (most recent call last):
+[2025-07-07T01:59:06.328+0000] {spark_submit.py:634} INFO - File "/opt/***/spark_project/src/spark/spark_main_minio.py", line 99, in <module>
+[2025-07-07T01:59:06.328+0000] {spark_submit.py:634} INFO - main()
+[2025-07-07T01:59:06.328+0000] {spark_submit.py:634} INFO - File "/opt/***/spark_project/src/spark/spark_main_minio.py", line 56, in main
+[2025-07-07T01:59:06.329+0000] {spark_submit.py:634} INFO - parquet_file = spark.read.parquet(file_path)
+[2025-07-07T01:59:06.329+0000] {spark_submit.py:634} INFO - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-07-07T01:59:06.329+0000] {spark_submit.py:634} INFO - File "/home/***/.local/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 642, in parquet
+[2025-07-07T01:59:06.329+0000] {spark_submit.py:634} INFO - File "/home/***/.local/lib/python3.11/site-packages/pyspark/python/lib/py4j-0.10.9.9-src.zip/py4j/java_gateway.py", line 1362, in __call__
+[2025-07-07T01:59:06.329+0000] {spark_submit.py:634} INFO - File "/home/***/.local/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 288, in deco
+[2025-07-07T01:59:06.380+0000] {spark_submit.py:634} INFO - pyspark.errors.exceptions.captured.NumberFormatException: For input string: "60s"
+[2025-07-07T01:59:06.600+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-07T01:59:06.607+0000] {taskinstance.py:2890} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 176, in execute
+    self._hook.submit(self.application)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 560, in submit
+    raise AirflowException(
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark-master:7077 --packages com.clickhouse:clickhouse-jdbc:0.6.4,org.apache.httpcomponents.client5:httpclient5:5.3.1,org.apache.hadoop:hadoop-aws:3.3.5,com.amazonaws:aws-java-sdk-bundle:1.12.674 --name arrow-spark --deploy-mode client /opt/***/spark_project/src/spark/spark_main_minio.py. Error code is: 1.
+[2025-07-07T01:59:06.611+0000] {taskinstance.py:1205} INFO - Marking task as FAILED. dag_id=my_spark_inline, task_id=spark_write_data, execution_date=20250706T051258, start_date=20250707T015857, end_date=20250707T015906
+[2025-07-07T01:59:06.627+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 90 for task spark_write_data (Cannot execute: spark-submit --master spark-master:7077 --packages com.clickhouse:clickhouse-jdbc:0.6.4,org.apache.httpcomponents.client5:httpclient5:5.3.1,org.apache.hadoop:hadoop-aws:3.3.5,com.amazonaws:aws-java-sdk-bundle:1.12.674 --name arrow-spark --deploy-mode client /opt/***/spark_project/src/spark/spark_main_minio.py. Error code is: 1.; 1982)
+[2025-07-07T01:59:06.664+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-07-07T01:59:06.676+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-07T01:59:06.677+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
