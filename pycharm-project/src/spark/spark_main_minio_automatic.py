@@ -1,9 +1,8 @@
-from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
-
 from config.spark_config import SparkConnect, get_spark_config
 from src.spark.spark_write_database import SparkWriteDatabase
-
+import json
+import sys
 
 def main():
     jar_packages = [
@@ -13,12 +12,12 @@ def main():
 
     # Danh cho nhung config ma khong phai SparkSession nao cung su dung!
     spark_config = {
-        "fs.s3a.access.key": "sOiuVZbAAGgmvx7Gm9c1",
-        "fs.s3a.secret.key": "esMneNDLEzNoVz8mXrqgMl3GvOyfflD7nTBEm0Po",
-        "fs.s3a.endpoint": "https://minio.vgpu.rdhasaki.com",
+        "fs.s3a.access.key": "minioadmin",
+        "fs.s3a.secret.key": "minioadmin123",
+        "fs.s3a.endpoint": "http://minio:9000",
         "fs.s3a.path.style.access": "true",
         "fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem",
-        "fs.s3a.connection.ssl.enabled": "false",
+        # "fs.s3a.connection.ssl.enabled": "false",
         # Error XXs
         "fs.s3a.threads.keepalivetime": "60000",
         "fs.s3a.connection.establish.timeout": "30000",
@@ -44,12 +43,30 @@ def main():
     )
     spark = spark_connect.spark
 
-    # Read Parquet file from MinIO
-    bucket_name = "hasaki-datalake"
-    file_path = f"s3a://{bucket_name}/ga4-data/hasakiwork/analytics_253437596/events/2025/4/15/0.parquet"
+    # --- BẮT ĐẦU PHẦN SỬA ĐỔI ĐỂ NHẬN ĐỐI SỐ ---
+    new_file_paths_json = sys.argv[1] if len(sys.argv) > 1 else "[]"
 
-    # PHAI VIET SCHEMA TRUOC KHI READ FILE!!!
-    parquet_file = spark.read.parquet(file_path)
+    try:
+        new_file_paths = json.loads(new_file_paths_json)
+    except json.JSONDecodeError:
+        print(f"Lỗi: Không thể phân tích chuỗi JSON đường dẫn file: {new_file_paths_json}")
+        spark.stop()
+        sys.exit(1)  # Thoát với mã lỗi nếu không phân tích được JSON
+
+    if not new_file_paths:
+        print("Không có file mới nào được truyền để xử lý. Kết thúc Spark job.")
+        spark.stop()
+        return  # Thoát hàm main nếu không có file nào
+
+    # Chuyển đổi danh sách đường dẫn tương đối thành đường dẫn S3A đầy đủ
+    bucket_name = "hasaki-datalake"  # Tên bucket của bạn
+    full_s3a_paths = [f"s3a://{bucket_name}/{path}" for path in new_file_paths]
+
+    print(f"Đang đọc dữ liệu từ các đường dẫn MinIO sau: {full_s3a_paths}")
+    # --- KẾT THÚC PHẦN SỬA ĐỔI ---
+
+    # Read Parquet file from MinIO
+    parquet_file = spark.read.parquet(*full_s3a_paths)
 
     # Biến đổi dữ liệu cho ClickHouse
     df_write_database = parquet_file.select(

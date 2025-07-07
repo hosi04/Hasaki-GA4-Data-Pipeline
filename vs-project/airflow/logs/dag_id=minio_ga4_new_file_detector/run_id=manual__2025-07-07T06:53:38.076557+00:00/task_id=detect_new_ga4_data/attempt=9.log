@@ -1,0 +1,23 @@
+[2025-07-07T07:17:53.619+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-07T07:17:53.636+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_ga4_new_file_detector.detect_new_ga4_data manual__2025-07-07T06:53:38.076557+00:00 [queued]>
+[2025-07-07T07:17:53.640+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_ga4_new_file_detector.detect_new_ga4_data manual__2025-07-07T06:53:38.076557+00:00 [queued]>
+[2025-07-07T07:17:53.640+0000] {taskinstance.py:2303} INFO - Starting attempt 9 of 10
+[2025-07-07T07:17:53.646+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): detect_new_ga4_data> on 2025-07-07 06:53:38.076557+00:00
+[2025-07-07T07:17:53.650+0000] {standard_task_runner.py:63} INFO - Started process 3735 to run task
+[2025-07-07T07:17:53.653+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_ga4_new_file_detector', 'detect_new_ga4_data', 'manual__2025-07-07T06:53:38.076557+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/dag_automatic.py', '--cfg-path', '/tmp/tmpddxml1n3']
+[2025-07-07T07:17:53.654+0000] {standard_task_runner.py:91} INFO - Job 150: Subtask detect_new_ga4_data
+[2025-07-07T07:17:53.665+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-07T07:17:53.685+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_ga4_new_file_detector.detect_new_ga4_data manual__2025-07-07T06:53:38.076557+00:00 [running]> on host 34b334fe6b50
+[2025-07-07T07:17:53.733+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_ga4_new_file_detector' AIRFLOW_CTX_TASK_ID='detect_new_ga4_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-07T06:53:38.076557+00:00' AIRFLOW_CTX_TRY_NUMBER='9' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-07T06:53:38.076557+00:00'
+[2025-07-07T07:17:53.733+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-07T07:17:53.792+0000] {logging_mixin.py:188} INFO - Bắt đầu kiểm tra các file mới hơn timestamp: 2025-07-07T06:11:42.444000+00:00
+[2025-07-07T07:17:53.804+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-07 07:17:37.407000+00:00
+[2025-07-07T07:17:53.804+0000] {logging_mixin.py:188} INFO - 🎉 Tìm thấy 1 file GA4 mới:
+[2025-07-07T07:17:53.804+0000] {logging_mixin.py:188} INFO - - ga4-data/0.parquet
+[2025-07-07T07:17:53.816+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-07-07T07:17:53.817+0000] {python.py:237} INFO - Done. Returned value was: True
+[2025-07-07T07:17:53.818+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-07T07:17:53.832+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=minio_ga4_new_file_detector, task_id=detect_new_ga4_data, execution_date=20250707T065338, start_date=20250707T071753, end_date=20250707T071753
+[2025-07-07T07:17:53.864+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-07T07:17:53.883+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-07T07:17:53.884+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

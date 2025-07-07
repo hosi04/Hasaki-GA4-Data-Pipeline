@@ -17,7 +17,7 @@ with DAG(
 
     spark_write_clickhouse = SparkSubmitOperator(
         task_id='spark_write_data',
-        application="/opt/airflow/spark_project/src/spark/spark_main_minio.py",
+        application="/opt/airflow/spark_project/src/spark/spark_main_minio_automatic.py",
         conn_id='spark-master',
         env_vars={
             'PYTHONPATH': '/opt/airflow/spark_project'
