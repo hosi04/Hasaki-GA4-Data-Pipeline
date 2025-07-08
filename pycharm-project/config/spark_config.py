@@ -7,8 +7,8 @@ class SparkConnect():
     def __init__(
             self,
             app_name: str,
-            # master_url: str = "local[*]",
-            master_url: str = "spark://spark-master:7077",
+            master_url: str = "local[*]",
+            # master_url: str = "spark://spark-master:7077",
             executor_cores: Optional[int] = 2,
             executor_memory: Optional[str] = "4g",
             driver_memory: Optional[str] = "2g",
@@ -31,8 +31,8 @@ class SparkConnect():
 
     def create_spark_session(
             self,
-            # master_url: str = "local[*]",
-            master_url: str = "spark://spark-master:7077",
+            master_url: str = "local[*]",
+            # master_url: str = "spark://spark-master:7077",
             executor_cores: Optional[int] = 2,
             executor_memory: Optional[str] = "4g",
             driver_memory: Optional[str] = "2g",
@@ -44,7 +44,7 @@ class SparkConnect():
         builder = SparkSession.builder \
             .appName(self.app_name) \
             .master(master_url) \
-            # .config("spark.jars", "/home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar,/home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar")
+            .config("spark.jars", "/home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar,/home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar")
 
         if executor_memory:
             builder.config("spark.executor.memory", executor_memory)

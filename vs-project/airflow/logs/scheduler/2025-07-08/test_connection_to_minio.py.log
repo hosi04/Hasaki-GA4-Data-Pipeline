@@ -1,0 +1,420 @@
+[2025-07-08T04:05:57.838+0000] {processor.py:161} INFO - Started process (PID=195) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:05:57.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:05:57.839+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:05:57.839+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:05:58.539+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:05:58.550+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:05:58.550+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:05:58.626+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:05:58.626+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:05:58.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.799 seconds
+[2025-07-08T04:06:28.976+0000] {processor.py:161} INFO - Started process (PID=281) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:06:28.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:06:28.977+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:06:28.977+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:06:29.046+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:06:29.142+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:06:29.141+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:06:29.151+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:06:29.150+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:06:29.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.249 seconds
+[2025-07-08T04:06:59.360+0000] {processor.py:161} INFO - Started process (PID=333) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:06:59.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:06:59.366+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:06:59.366+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:06:59.433+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:06:59.453+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:06:59.453+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:06:59.465+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:06:59.465+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:06:59.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.167 seconds
+[2025-07-08T04:07:29.643+0000] {processor.py:161} INFO - Started process (PID=382) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:07:29.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:07:29.646+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:07:29.646+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:07:29.816+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:07:29.843+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:07:29.843+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:07:29.922+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:07:29.922+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:07:29.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.293 seconds
+[2025-07-08T04:08:00.065+0000] {processor.py:161} INFO - Started process (PID=417) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:08:00.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:08:00.071+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:08:00.071+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:08:00.129+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:08:00.145+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:08:00.145+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:08:00.156+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:08:00.156+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:08:00.165+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.105 seconds
+[2025-07-08T04:08:30.345+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:08:30.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:08:30.349+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:08:30.349+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:08:30.434+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:08:30.449+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:08:30.449+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:08:30.460+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:08:30.460+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:08:30.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.176 seconds
+[2025-07-08T04:09:00.722+0000] {processor.py:161} INFO - Started process (PID=561) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:09:00.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:09:00.725+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:09:00.724+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:09:00.846+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:09:00.934+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:09:00.934+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:09:00.945+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:09:00.945+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:09:01.021+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.305 seconds
+[2025-07-08T04:09:31.158+0000] {processor.py:161} INFO - Started process (PID=606) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:09:31.159+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:09:31.160+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:09:31.159+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:09:31.226+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:09:31.245+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:09:31.245+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:09:31.255+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:09:31.255+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:09:31.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.109 seconds
+[2025-07-08T04:10:01.401+0000] {processor.py:161} INFO - Started process (PID=628) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:10:01.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:10:01.405+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:10:01.404+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:10:01.447+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:10:01.464+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:10:01.464+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:10:01.521+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:10:01.521+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:10:01.534+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.138 seconds
+[2025-07-08T04:10:31.570+0000] {processor.py:161} INFO - Started process (PID=650) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:10:31.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:10:31.580+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:10:31.579+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:10:31.627+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:10:31.649+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:10:31.649+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:10:31.660+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:10:31.660+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:10:31.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.103 seconds
+[2025-07-08T04:11:01.851+0000] {processor.py:161} INFO - Started process (PID=673) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:11:01.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:11:01.861+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:11:01.860+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:11:01.928+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:11:01.945+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:11:01.945+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:11:01.956+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:11:01.956+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:11:01.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.116 seconds
+[2025-07-08T04:11:32.140+0000] {processor.py:161} INFO - Started process (PID=695) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:11:32.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:11:32.144+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:11:32.144+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:11:32.324+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:11:32.341+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:11:32.341+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:11:32.426+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:11:32.426+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:11:32.444+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.308 seconds
+[2025-07-08T04:12:03.266+0000] {processor.py:161} INFO - Started process (PID=717) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:12:03.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:12:03.268+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:12:03.268+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:12:03.426+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:12:03.444+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:12:03.443+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:12:03.521+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:12:03.520+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:12:03.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.267 seconds
+[2025-07-08T04:12:33.668+0000] {processor.py:161} INFO - Started process (PID=732) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:12:33.668+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:12:33.669+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:12:33.669+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:12:33.733+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:12:33.746+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:12:33.746+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:12:33.758+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:12:33.757+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:12:33.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.103 seconds
+[2025-07-08T04:13:03.955+0000] {processor.py:161} INFO - Started process (PID=754) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:13:03.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:13:03.957+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:13:03.956+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:13:04.035+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:13:04.049+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:13:04.049+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:13:04.062+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:13:04.062+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:13:04.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.126 seconds
+[2025-07-08T04:13:34.144+0000] {processor.py:161} INFO - Started process (PID=775) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:13:34.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:13:34.153+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:13:34.153+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:13:34.224+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:13:34.237+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:13:34.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:13:34.248+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:13:34.248+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:13:34.256+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.116 seconds
+[2025-07-08T04:14:04.400+0000] {processor.py:161} INFO - Started process (PID=798) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:14:04.400+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:14:04.401+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:14:04.401+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:14:04.444+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:14:04.463+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:14:04.463+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:14:04.517+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:14:04.516+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:14:04.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.145 seconds
+[2025-07-08T04:14:34.678+0000] {processor.py:161} INFO - Started process (PID=820) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:14:34.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:14:34.680+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:14:34.680+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:14:34.735+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:14:34.753+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:14:34.753+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:14:34.764+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:14:34.764+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:14:34.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.099 seconds
+[2025-07-08T04:15:04.858+0000] {processor.py:161} INFO - Started process (PID=841) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:15:04.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:15:04.860+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:15:04.859+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:15:04.935+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:15:04.959+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:15:04.959+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:15:04.970+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:15:04.970+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:15:05.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.165 seconds
+[2025-07-08T04:15:35.159+0000] {processor.py:161} INFO - Started process (PID=864) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:15:35.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:15:35.162+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:15:35.162+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:15:35.230+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:15:35.247+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:15:35.247+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:15:35.260+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:15:35.259+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:15:35.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.113 seconds
+[2025-07-08T04:16:05.460+0000] {processor.py:161} INFO - Started process (PID=886) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:16:05.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:16:05.466+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:16:05.466+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:16:05.531+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:16:05.545+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:16:05.545+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:16:05.557+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:16:05.557+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:16:05.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.112 seconds
+[2025-07-08T04:16:35.748+0000] {processor.py:161} INFO - Started process (PID=907) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:16:35.748+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:16:35.749+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:16:35.749+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:16:35.837+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:16:35.854+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:16:35.853+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:16:35.867+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:16:35.867+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:16:35.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.132 seconds
+[2025-07-08T04:17:06.040+0000] {processor.py:161} INFO - Started process (PID=929) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:17:06.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:17:06.042+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:17:06.041+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:17:06.125+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:17:06.141+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:17:06.141+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:17:06.151+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:17:06.151+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:17:06.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.132 seconds
+[2025-07-08T04:17:36.273+0000] {processor.py:161} INFO - Started process (PID=951) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:17:36.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:17:36.277+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:17:36.277+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:17:36.334+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:17:36.352+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:17:36.352+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:17:36.364+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:17:36.364+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:17:36.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.103 seconds
+[2025-07-08T04:18:06.550+0000] {processor.py:161} INFO - Started process (PID=974) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:18:06.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:18:06.557+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:18:06.557+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:18:06.624+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:18:06.640+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:18:06.640+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:18:06.652+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:18:06.652+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:18:06.659+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.114 seconds
+[2025-07-08T04:18:36.813+0000] {processor.py:161} INFO - Started process (PID=996) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:18:36.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:18:36.818+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:18:36.818+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:18:36.863+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:18:36.922+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:18:36.922+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:18:36.933+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:18:36.933+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:18:36.949+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.142 seconds
+[2025-07-08T04:19:07.039+0000] {processor.py:161} INFO - Started process (PID=1017) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:19:07.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:19:07.047+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:19:07.047+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:19:07.130+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:19:07.147+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:19:07.147+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:19:07.159+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:19:07.159+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:19:07.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.142 seconds
+[2025-07-08T04:19:38.155+0000] {processor.py:161} INFO - Started process (PID=1039) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:19:38.158+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:19:38.159+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:19:38.159+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:19:38.233+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:19:38.248+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:19:38.248+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:19:38.259+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:19:38.259+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:19:38.315+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.166 seconds
+[2025-07-08T04:20:08.378+0000] {processor.py:161} INFO - Started process (PID=1060) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:20:08.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:20:08.387+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:20:08.387+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:20:08.431+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:20:08.453+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:20:08.453+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:20:08.463+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:20:08.463+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:20:08.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.096 seconds
+[2025-07-08T04:20:38.656+0000] {processor.py:161} INFO - Started process (PID=1082) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:20:38.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:20:38.657+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:20:38.657+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:20:38.731+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:20:38.749+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:20:38.749+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:20:38.759+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:20:38.759+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:20:38.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.125 seconds
+[2025-07-08T04:21:08.845+0000] {processor.py:161} INFO - Started process (PID=1105) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:21:08.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:21:08.847+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:21:08.847+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:21:08.942+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:21:08.960+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:21:08.960+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:21:09.025+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:21:09.025+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:21:09.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.193 seconds
+[2025-07-08T04:21:39.164+0000] {processor.py:161} INFO - Started process (PID=1126) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:21:39.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:21:39.166+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:21:39.166+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:21:39.230+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:21:39.248+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:21:39.247+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:21:39.258+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:21:39.258+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:21:39.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.107 seconds
+[2025-07-08T04:22:09.416+0000] {processor.py:161} INFO - Started process (PID=1148) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:22:09.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:22:09.421+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:22:09.421+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:22:09.464+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:22:09.525+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:22:09.524+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:22:09.535+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:22:09.535+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:22:09.551+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.139 seconds
+[2025-07-08T04:22:39.614+0000] {processor.py:161} INFO - Started process (PID=1169) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:22:39.622+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:22:39.623+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:22:39.622+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:22:39.665+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:22:39.722+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:22:39.722+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:22:39.734+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:22:39.734+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:22:39.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.142 seconds
+[2025-07-08T04:23:10.727+0000] {processor.py:161} INFO - Started process (PID=1192) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:23:10.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:23:10.729+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:23:10.728+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:23:10.824+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:23:10.848+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:23:10.847+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:23:10.858+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:23:10.858+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:23:10.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.151 seconds
+[2025-07-08T04:23:40.975+0000] {processor.py:161} INFO - Started process (PID=1213) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:23:40.975+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:23:40.976+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:23:40.976+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:23:41.037+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:23:41.053+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:23:41.052+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:23:41.064+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:23:41.064+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:23:41.071+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.102 seconds
+[2025-07-08T04:24:11.146+0000] {processor.py:161} INFO - Started process (PID=1236) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:24:11.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:24:11.147+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:24:11.147+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:24:11.224+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:24:11.240+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:24:11.240+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:24:11.257+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:24:11.257+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:24:11.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.133 seconds
+[2025-07-08T04:24:41.446+0000] {processor.py:161} INFO - Started process (PID=1258) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:24:41.451+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:24:41.452+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:24:41.452+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:24:41.529+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:24:41.545+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:24:41.545+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:24:41.556+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:24:41.555+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:24:41.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.128 seconds
+[2025-07-08T04:25:11.713+0000] {processor.py:161} INFO - Started process (PID=1280) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:25:11.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:25:11.720+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:25:11.720+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:25:11.762+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:25:11.818+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:25:11.818+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:25:11.830+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:25:11.829+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:25:11.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.138 seconds
+[2025-07-08T04:25:42.022+0000] {processor.py:161} INFO - Started process (PID=1302) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:25:42.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:25:42.028+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:25:42.028+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:25:42.142+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:25:42.223+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:25:42.223+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:25:42.237+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:25:42.237+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:25:42.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.299 seconds
+[2025-07-08T04:26:12.428+0000] {processor.py:161} INFO - Started process (PID=1317) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:26:12.431+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:26:12.432+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:26:12.432+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:26:12.517+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:26:12.533+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:26:12.533+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:26:12.543+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:26:12.543+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:26:12.551+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.126 seconds
+[2025-07-08T04:26:42.695+0000] {processor.py:161} INFO - Started process (PID=1339) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:26:42.696+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:26:42.696+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:26:42.696+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:26:42.742+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:26:42.758+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:26:42.757+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:26:42.767+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:26:42.767+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:26:42.823+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.131 seconds
+[2025-07-08T04:27:12.954+0000] {processor.py:161} INFO - Started process (PID=1361) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:27:12.957+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:27:12.958+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:27:12.958+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:27:13.029+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:27:13.049+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:27:13.049+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:27:13.059+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:27:13.059+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:27:13.078+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.127 seconds
+[2025-07-08T04:27:43.148+0000] {processor.py:161} INFO - Started process (PID=1383) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:27:43.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:27:43.153+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:27:43.152+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:27:43.226+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:27:43.243+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:27:43.243+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:27:43.252+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:27:43.252+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:27:43.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.118 seconds
+[2025-07-08T04:28:13.450+0000] {processor.py:161} INFO - Started process (PID=1404) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:28:13.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:28:13.455+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:28:13.455+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:28:13.528+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:28:13.542+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:28:13.542+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:28:13.553+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:28:13.553+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:28:13.570+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.123 seconds
+[2025-07-08T04:28:43.718+0000] {processor.py:161} INFO - Started process (PID=1427) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:28:43.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:28:43.720+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:28:43.720+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:28:43.764+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:28:43.828+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:28:43.828+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:28:43.840+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:28:43.840+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:28:43.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.137 seconds
+[2025-07-08T04:29:13.882+0000] {processor.py:161} INFO - Started process (PID=1448) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:29:13.890+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:29:13.891+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:29:13.890+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:29:13.933+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:29:13.956+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:29:13.956+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:29:13.967+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:29:13.967+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:29:14.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.139 seconds
+[2025-07-08T04:29:44.140+0000] {processor.py:161} INFO - Started process (PID=1471) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:29:44.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:29:44.147+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:29:44.147+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:29:44.231+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:29:44.245+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:29:44.245+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:29:44.256+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:29:44.256+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:29:44.263+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.128 seconds
+[2025-07-08T04:30:14.453+0000] {processor.py:161} INFO - Started process (PID=1493) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:30:14.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:30:14.454+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:30:14.454+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:30:14.534+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:30:14.547+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:30:14.547+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:30:14.557+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:30:14.557+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:30:14.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.125 seconds
+[2025-07-08T04:30:44.761+0000] {processor.py:161} INFO - Started process (PID=1514) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:30:44.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:30:44.771+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:30:44.771+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:30:44.832+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:30:44.847+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:30:44.847+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:30:44.857+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:30:44.857+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:30:44.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.109 seconds
+[2025-07-08T04:31:15.004+0000] {processor.py:161} INFO - Started process (PID=1536) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:31:15.009+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:31:15.011+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:31:15.010+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:31:15.056+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:31:15.117+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:31:15.117+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:31:15.129+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:31:15.128+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:31:15.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.147 seconds
+[2025-07-08T04:31:46.113+0000] {processor.py:161} INFO - Started process (PID=1559) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:31:46.119+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:31:46.121+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:31:46.120+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:31:46.166+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:31:46.222+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:31:46.222+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:31:46.234+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:31:46.233+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:31:46.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.141 seconds
+[2025-07-08T04:32:16.334+0000] {processor.py:161} INFO - Started process (PID=1580) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:32:16.334+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:32:16.335+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:32:16.335+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:32:16.425+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:32:16.441+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:32:16.441+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:32:16.452+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:32:16.452+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:32:16.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.139 seconds
+[2025-07-08T04:32:47.453+0000] {processor.py:161} INFO - Started process (PID=1603) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:32:47.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:32:47.460+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:32:47.460+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:32:47.533+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:32:47.550+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:32:47.550+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:32:47.561+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:32:47.561+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:32:47.577+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.129 seconds
+[2025-07-08T04:33:17.659+0000] {processor.py:161} INFO - Started process (PID=1625) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:33:17.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:33:17.667+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:33:17.667+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:33:17.734+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:33:17.751+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:33:17.750+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:33:17.761+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:33:17.761+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:33:17.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.114 seconds
+[2025-07-08T04:33:47.951+0000] {processor.py:161} INFO - Started process (PID=1646) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:33:47.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:33:47.956+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:33:47.956+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:33:48.038+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:33:48.055+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:33:48.055+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:33:48.065+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:33:48.065+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:33:48.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.128 seconds
+[2025-07-08T04:34:18.261+0000] {processor.py:161} INFO - Started process (PID=1669) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:34:18.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:34:18.266+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:34:18.266+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:34:18.327+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:34:18.343+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:34:18.343+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:34:18.353+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:34:18.353+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:34:18.361+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.105 seconds
+[2025-07-08T04:34:48.552+0000] {processor.py:161} INFO - Started process (PID=1691) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:34:48.557+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:34:48.558+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:34:48.558+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:34:48.629+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:34:48.644+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:34:48.644+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:34:48.657+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:34:48.656+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:34:48.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.127 seconds
+[2025-07-08T04:35:18.816+0000] {processor.py:161} INFO - Started process (PID=1712) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:35:18.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:35:18.818+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:35:18.817+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:35:18.860+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:35:18.925+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:35:18.925+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:35:18.934+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:35:18.934+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:35:18.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.137 seconds
+[2025-07-08T04:35:49.094+0000] {processor.py:161} INFO - Started process (PID=1735) to work on /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:35:49.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/test_connection_to_minio.py for tasks to queue
+[2025-07-08T04:35:49.100+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:35:49.100+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:35:49.146+0000] {processor.py:840} INFO - DAG(s) 'connect_to_minio' retrieved from /opt/airflow/dags/test_connection_to_minio.py
+[2025-07-08T04:35:49.161+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:35:49.161+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-08T04:35:49.221+0000] {logging_mixin.py:188} INFO - [2025-07-08T04:35:49.221+0000] {dag.py:3954} INFO - Setting next_dagrun for connect_to_minio to 2025-07-07 00:00:00+00:00, run_after=2025-07-08 00:00:00+00:00
+[2025-07-08T04:35:49.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/test_connection_to_minio.py took 0.143 seconds

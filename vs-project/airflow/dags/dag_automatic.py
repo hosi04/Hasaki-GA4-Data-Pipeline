@@ -32,8 +32,6 @@ def detect_new_ga4_data(**context):
     bucket_name = 'hasaki-datalake'
     ga4_prefix = 'ga4-data/' 
 
-
-    # --- BẮT ĐẦU PHẦN SỬA ĐỔI ---
     try:
         last_processed_timestamp_str = Variable.get("minio_ga4_last_processed_timestamp")
     except KeyError:
@@ -88,7 +86,6 @@ def update_last_processed_timestamp(**context):
         Variable.set("minio_ga4_last_processed_timestamp", detected_latest_timestamp)
     else:
         print("Không có timestamp mới nào để cập nhật (có thể không tìm thấy file mới).")
-
 
 default_args = {
     'owner': 'airflow',

@@ -43,7 +43,6 @@ def main():
     )
     spark = spark_connect.spark
 
-    # --- BẮT ĐẦU PHẦN SỬA ĐỔI ĐỂ NHẬN ĐỐI SỐ ---
     new_file_paths_json = sys.argv[1] if len(sys.argv) > 1 else "[]"
 
     try:
@@ -63,7 +62,6 @@ def main():
     full_s3a_paths = [f"s3a://{bucket_name}/{path}" for path in new_file_paths]
 
     print(f"Đang đọc dữ liệu từ các đường dẫn MinIO sau: {full_s3a_paths}")
-    # --- KẾT THÚC PHẦN SỬA ĐỔI ---
 
     # Read Parquet file from MinIO
     parquet_file = spark.read.parquet(*full_s3a_paths)
