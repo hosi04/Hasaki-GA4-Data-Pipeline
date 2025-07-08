@@ -44,7 +44,7 @@ class SparkConnect():
         builder = SparkSession.builder \
             .appName(self.app_name) \
             .master(master_url) \
-            .config("spark.jars", "/home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar,/home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar")
+            # .config("spark.jars", "/home/ngocthanh/spark-3.5.3/jars/hadoop-aws-3.3.4.jar,/home/ngocthanh/spark-3.5.3/jars/aws-java-sdk-bundle-1.12.761.jar")
 
         if executor_memory:
             builder.config("spark.executor.memory", executor_memory)

@@ -20,7 +20,7 @@ class ClickHouseConfig(DatabaseConfig):
     password: str
     database: str
     # jar_path: Optional[str] = None
-    table: str = "events_test"
+    table: str = "ga_raw_events"
 
 
 def get_database_config() -> Dict[str, DatabaseConfig]:

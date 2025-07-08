@@ -1,4 +1,4 @@
-CREATE TABLE minio_db.events_test
+CREATE TABLE hskcdp_ga.ga_raw_events
 (
     event_date Date,
     event_timestamp DateTime,

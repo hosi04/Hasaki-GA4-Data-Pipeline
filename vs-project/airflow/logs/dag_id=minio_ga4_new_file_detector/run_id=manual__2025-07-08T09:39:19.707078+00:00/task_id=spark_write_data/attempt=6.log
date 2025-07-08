@@ -1,0 +1,135 @@
+[2025-07-08T10:07:45.289+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-08T10:07:45.311+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_ga4_new_file_detector.spark_write_data manual__2025-07-08T09:39:19.707078+00:00 [queued]>
+[2025-07-08T10:07:45.317+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_ga4_new_file_detector.spark_write_data manual__2025-07-08T09:39:19.707078+00:00 [queued]>
+[2025-07-08T10:07:45.317+0000] {taskinstance.py:2303} INFO - Starting attempt 6 of 7
+[2025-07-08T10:07:45.322+0000] {taskinstance.py:2327} INFO - Executing <Task(SparkSubmitOperator): spark_write_data> on 2025-07-08 09:39:19.707078+00:00
+[2025-07-08T10:07:45.326+0000] {standard_task_runner.py:63} INFO - Started process 10456 to run task
+[2025-07-08T10:07:45.330+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_ga4_new_file_detector', 'spark_write_data', 'manual__2025-07-08T09:39:19.707078+00:00', '--job-id', '203', '--raw', '--subdir', 'DAGS_FOLDER/dag_automatic.py', '--cfg-path', '/tmp/tmpsfr84b7z']
+[2025-07-08T10:07:45.332+0000] {standard_task_runner.py:91} INFO - Job 203: Subtask spark_write_data
+[2025-07-08T10:07:45.342+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-08T10:07:45.362+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_ga4_new_file_detector.spark_write_data manual__2025-07-08T09:39:19.707078+00:00 [running]> on host 1a66de7e9daf
+[2025-07-08T10:07:45.419+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_ga4_new_file_detector' AIRFLOW_CTX_TASK_ID='spark_write_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-08T09:39:19.707078+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-08T09:39:19.707078+00:00'
+[2025-07-08T10:07:45.419+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-08T10:07:45.433+0000] {base.py:84} INFO - Using connection ID 'spark-master' for task execution.
+[2025-07-08T10:07:45.435+0000] {spark_submit.py:473} INFO - Spark-Submit cmd: spark-submit --master spark://spark-master:7077:7077 --packages com.clickhouse:clickhouse-jdbc:0.6.4,org.apache.httpcomponents.client5:httpclient5:5.3.1,org.apache.hadoop:hadoop-aws:3.3.5,com.amazonaws:aws-java-sdk-bundle:1.11.1026 --name arrow-spark --deploy-mode client /opt/***/spark_project/src/spark/spark_main_minio_automatic.py ["ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/0.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/1.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/2.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/3.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/4.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/5.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/6.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/7.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/8.parquet", "ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/9.parquet"]
+[2025-07-08T10:07:45.657+0000] {spark_submit.py:634} INFO - WARNING: Using incubator modules: jdk.incubator.vector
+[2025-07-08T10:07:47.154+0000] {spark_submit.py:634} INFO - :: loading settings :: url = jar:file:/home/***/.local/lib/python3.11/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2025-07-08T10:07:47.232+0000] {spark_submit.py:634} INFO - Ivy Default Cache set to: /home/***/.ivy2.5.2/cache
+[2025-07-08T10:07:47.232+0000] {spark_submit.py:634} INFO - The jars for the packages stored in: /home/***/.ivy2.5.2/jars
+[2025-07-08T10:07:47.234+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-jdbc added as a dependency
+[2025-07-08T10:07:47.234+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.client5#httpclient5 added as a dependency
+[2025-07-08T10:07:47.235+0000] {spark_submit.py:634} INFO - org.apache.hadoop#hadoop-aws added as a dependency
+[2025-07-08T10:07:47.235+0000] {spark_submit.py:634} INFO - com.amazonaws#aws-java-sdk-bundle added as a dependency
+[2025-07-08T10:07:47.235+0000] {spark_submit.py:634} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-bec0a667-3ca4-4b07-8f9e-d4bf9a652954;1.0
+[2025-07-08T10:07:47.235+0000] {spark_submit.py:634} INFO - confs: [default]
+[2025-07-08T10:07:47.347+0000] {spark_submit.py:634} INFO - found com.clickhouse#clickhouse-jdbc;0.6.4 in central
+[2025-07-08T10:07:47.424+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.client5#httpclient5;5.3.1 in central
+[2025-07-08T10:07:47.441+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.core5#httpcore5;5.2.4 in central
+[2025-07-08T10:07:47.453+0000] {spark_submit.py:634} INFO - found org.apache.httpcomponents.core5#httpcore5-h2;5.2.4 in central
+[2025-07-08T10:07:47.535+0000] {spark_submit.py:634} INFO - found org.slf4j#slf4j-api;1.7.36 in central
+[2025-07-08T10:07:47.554+0000] {spark_submit.py:634} INFO - found org.apache.hadoop#hadoop-aws;3.3.5 in central
+[2025-07-08T10:07:47.632+0000] {spark_submit.py:634} INFO - found com.amazonaws#aws-java-sdk-bundle;1.12.316 in central
+[2025-07-08T10:07:47.641+0000] {spark_submit.py:634} INFO - found org.wildfly.openssl#wildfly-openssl;1.1.3.Final in central
+[2025-07-08T10:07:47.657+0000] {spark_submit.py:634} INFO - :: resolution report :: resolve 413ms :: artifacts dl 10ms
+[2025-07-08T10:07:47.657+0000] {spark_submit.py:634} INFO - :: modules in use:
+[2025-07-08T10:07:47.724+0000] {spark_submit.py:634} INFO - com.amazonaws#aws-java-sdk-bundle;1.12.316 from central in [default]
+[2025-07-08T10:07:47.724+0000] {spark_submit.py:634} INFO - com.clickhouse#clickhouse-jdbc;0.6.4 from central in [default]
+[2025-07-08T10:07:47.724+0000] {spark_submit.py:634} INFO - org.apache.hadoop#hadoop-aws;3.3.5 from central in [default]
+[2025-07-08T10:07:47.724+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.client5#httpclient5;5.3.1 from central in [default]
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.core5#httpcore5;5.2.4 from central in [default]
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - org.apache.httpcomponents.core5#httpcore5-h2;5.2.4 from central in [default]
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - org.slf4j#slf4j-api;1.7.36 from central in [default]
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - org.wildfly.openssl#wildfly-openssl;1.1.3.Final from central in [default]
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - :: evicted modules:
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - com.amazonaws#aws-java-sdk-bundle;1.11.1026 by [com.amazonaws#aws-java-sdk-bundle;1.12.316] in [default]
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - |                  |            modules            ||   artifacts   |
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-07-08T10:07:47.725+0000] {spark_submit.py:634} INFO - |      default     |   9   |   0   |   0   |   1   ||   8   |   0   |
+[2025-07-08T10:07:47.726+0000] {spark_submit.py:634} INFO - ---------------------------------------------------------------------
+[2025-07-08T10:07:47.729+0000] {spark_submit.py:634} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-bec0a667-3ca4-4b07-8f9e-d4bf9a652954
+[2025-07-08T10:07:47.729+0000] {spark_submit.py:634} INFO - confs: [default]
+[2025-07-08T10:07:47.733+0000] {spark_submit.py:634} INFO - 0 artifacts copied, 8 already retrieved (0kB/4ms)
+[2025-07-08T10:07:47.962+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2025-07-08T10:07:49.450+0000] {spark_submit.py:634} INFO - Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+[2025-07-08T10:07:49.453+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkContext: Running Spark version 4.0.0
+[2025-07-08T10:07:49.454+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkContext: OS info Linux, 6.8.0-60-generic, amd64
+[2025-07-08T10:07:49.455+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkContext: Java version 17.0.15
+[2025-07-08T10:07:49.469+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO ResourceUtils: ==============================================================
+[2025-07-08T10:07:49.469+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2025-07-08T10:07:49.469+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO ResourceUtils: ==============================================================
+[2025-07-08T10:07:49.469+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkContext: Submitted application: thanhdz
+[2025-07-08T10:07:49.539+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2025-07-08T10:07:49.542+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+[2025-07-08T10:07:49.543+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2025-07-08T10:07:49.632+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SecurityManager: Changing view acls to: ***
+[2025-07-08T10:07:49.633+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SecurityManager: Changing modify acls to: ***
+[2025-07-08T10:07:49.633+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SecurityManager: Changing view acls groups to: ***
+[2025-07-08T10:07:49.634+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SecurityManager: Changing modify acls groups to: ***
+[2025-07-08T10:07:49.635+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: *** groups with view permissions: EMPTY; users with modify permissions: ***; groups with modify permissions: EMPTY; RPC SSL disabled
+[2025-07-08T10:07:49.930+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO Utils: Successfully started service 'sparkDriver' on port 42171.
+[2025-07-08T10:07:49.950+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkEnv: Registering MapOutputTracker
+[2025-07-08T10:07:49.956+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkEnv: Registering BlockManagerMaster
+[2025-07-08T10:07:49.963+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2025-07-08T10:07:49.963+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2025-07-08T10:07:49.965+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:49 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2025-07-08T10:07:50.027+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-228bf44f-df54-46ad-ba85-b8b971a89719
+[2025-07-08T10:07:50.038+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkEnv: Registering OutputCommitCoordinator
+[2025-07-08T10:07:50.162+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2025-07-08T10:07:50.261+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2025-07-08T10:07:50.342+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/com.clickhouse_clickhouse-jdbc-0.6.4.jar at spark://1a66de7e9daf:42171/jars/com.clickhouse_clickhouse-jdbc-0.6.4.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.342+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar at spark://1a66de7e9daf:42171/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.342+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/org.apache.hadoop_hadoop-aws-3.3.5.jar at spark://1a66de7e9daf:42171/jars/org.apache.hadoop_hadoop-aws-3.3.5.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.343+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar at spark://1a66de7e9daf:42171/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.343+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar at spark://1a66de7e9daf:42171/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.343+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/org.slf4j_slf4j-api-1.7.36.jar at spark://1a66de7e9daf:42171/jars/org.slf4j_slf4j-api-1.7.36.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.343+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.316.jar at spark://1a66de7e9daf:42171/jars/com.amazonaws_aws-java-sdk-bundle-1.12.316.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.343+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added JAR file:///home/***/.ivy2.5.2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at spark://1a66de7e9daf:42171/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.345+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/com.clickhouse_clickhouse-jdbc-0.6.4.jar at spark://1a66de7e9daf:42171/files/com.clickhouse_clickhouse-jdbc-0.6.4.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.346+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/com.clickhouse_clickhouse-jdbc-0.6.4.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/com.clickhouse_clickhouse-jdbc-0.6.4.jar
+[2025-07-08T10:07:50.355+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar at spark://1a66de7e9daf:42171/files/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.355+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/org.apache.httpcomponents.client5_httpclient5-5.3.1.jar
+[2025-07-08T10:07:50.359+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.hadoop_hadoop-aws-3.3.5.jar at spark://1a66de7e9daf:42171/files/org.apache.hadoop_hadoop-aws-3.3.5.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.359+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.hadoop_hadoop-aws-3.3.5.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/org.apache.hadoop_hadoop-aws-3.3.5.jar
+[2025-07-08T10:07:50.424+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar at spark://1a66de7e9daf:42171/files/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.425+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/org.apache.httpcomponents.core5_httpcore5-5.2.4.jar
+[2025-07-08T10:07:50.430+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar at spark://1a66de7e9daf:42171/files/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.430+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/org.apache.httpcomponents.core5_httpcore5-h2-5.2.4.jar
+[2025-07-08T10:07:50.436+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.slf4j_slf4j-api-1.7.36.jar at spark://1a66de7e9daf:42171/files/org.slf4j_slf4j-api-1.7.36.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.437+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.slf4j_slf4j-api-1.7.36.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/org.slf4j_slf4j-api-1.7.36.jar
+[2025-07-08T10:07:50.440+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.316.jar at spark://1a66de7e9daf:42171/files/com.amazonaws_aws-java-sdk-bundle-1.12.316.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.441+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.316.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/com.amazonaws_aws-java-sdk-bundle-1.12.316.jar
+[2025-07-08T10:07:50.579+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SparkContext: Added file file:///home/***/.ivy2.5.2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at spark://1a66de7e9daf:42171/files/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1751969269444
+[2025-07-08T10:07:50.579+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Copying /home/***/.ivy2.5.2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar to /tmp/spark-fa2ce9c0-b1bc-4c71-a017-335365ca3700/userFiles-59bf81f4-0517-4ce6-b42e-f8b770c98ea5/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar
+[2025-07-08T10:07:50.594+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SecurityManager: Changing view acls to: ***
+[2025-07-08T10:07:50.594+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SecurityManager: Changing modify acls to: ***
+[2025-07-08T10:07:50.594+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SecurityManager: Changing view acls groups to: ***
+[2025-07-08T10:07:50.594+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SecurityManager: Changing modify acls groups to: ***
+[2025-07-08T10:07:50.595+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: *** groups with view permissions: EMPTY; users with modify permissions: ***; groups with modify permissions: EMPTY; RPC SSL disabled
+[2025-07-08T10:07:50.760+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+[2025-07-08T10:07:50.845+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO TransportClientFactory: Successfully created connection to spark-master/172.20.0.6:7077 after 13 ms (0 ms spent in bootstraps)
+[2025-07-08T10:07:50.937+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20250708100750-0004
+[2025-07-08T10:07:50.941+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33899.
+[2025-07-08T10:07:50.942+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO NettyBlockTransferService: Server created on 1a66de7e9daf:33899
+[2025-07-08T10:07:50.942+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20250708100750-0004/0 on worker-20250708063549-172.20.0.7-46463 (172.20.0.7:46463) with 2 core(s)
+[2025-07-08T10:07:50.943+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2025-07-08T10:07:50.944+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO StandaloneSchedulerBackend: Granted executor ID app-20250708100750-0004/0 on hostPort 172.20.0.7:46463 with 2 core(s), 1024.0 MiB RAM
+[2025-07-08T10:07:50.950+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 1a66de7e9daf, 33899, None)
+[2025-07-08T10:07:50.953+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO BlockManagerMasterEndpoint: Registering block manager 1a66de7e9daf:33899 with 413.9 MiB RAM, BlockManagerId(driver, 1a66de7e9daf, 33899, None)
+[2025-07-08T10:07:50.955+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:50 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 1a66de7e9daf, 33899, None)
+[2025-07-08T10:07:51.025+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:51 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 1a66de7e9daf, 33899, None)
+[2025-07-08T10:07:51.027+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:51 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20250708100750-0004/0 is now RUNNING
+[2025-07-08T10:07:51.232+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:51 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2025-07-08T10:07:52.535+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:52 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.20.0.7:45486) with ID 0, ResourceProfileId 0
+[2025-07-08T10:07:52.628+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:52 INFO BlockManagerMasterEndpoint: Registering block manager 172.20.0.7:38051 with 434.4 MiB RAM, BlockManagerId(0, 172.20.0.7, 38051, None)
+[2025-07-08T10:07:53.979+0000] {spark_submit.py:634} INFO - Đang đọc dữ liệu từ các đường dẫn MinIO sau: ['s3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/0.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/1.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/2.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/3.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/4.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/5.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/6.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/7.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/8.parquet', 's3a://hasaki-datalake/ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/9.parquet']
+[2025-07-08T10:07:54.764+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:54 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2025-07-08T10:07:59.831+0000] {spark_submit.py:634} INFO - 25/07/08 10:07:59 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2025-07-08T10:12:11.368+0000] {spark_submit.py:634} INFO - ------------------------Dữ liệu đã được ghi thành công vào ClickHouse------------------------
+[2025-07-08T10:12:11.497+0000] {spark_submit.py:634} INFO - -------------Stop SparkSession-------------
+[2025-07-08T10:12:11.669+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-08T10:12:11.676+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=minio_ga4_new_file_detector, task_id=spark_write_data, execution_date=20250708T093919, start_date=20250708T100745, end_date=20250708T101211
+[2025-07-08T10:12:11.725+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-08T10:12:11.741+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-08T10:12:11.742+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

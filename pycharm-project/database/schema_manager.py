@@ -3,7 +3,7 @@ from clickhouse_connect.driver.exceptions import ClickHouseError
 
 def create_clickhouse_schema(client):
     SQL_FILE_PATH = Path("../sql/clickhouse_schema.sql")
-    DATABASE_NAME = "minio_db"
+    DATABASE_NAME = "hskcdp_ga"
 
     try:
         client.command(f"DROP DATABASE IF EXISTS {DATABASE_NAME}")

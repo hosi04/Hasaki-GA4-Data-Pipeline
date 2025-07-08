@@ -1,4 +1,6 @@
 from pyspark.sql.functions import *
+from pyspark.sql.types import *
+from config.minio_config import get_minio_config
 from config.spark_config import SparkConnect, get_spark_config
 from src.spark.spark_write_database import SparkWriteDatabase
 import json
@@ -9,12 +11,12 @@ def main():
         "com.clickhouse:clickhouse-jdbc:0.6.4",
         "org.apache.httpcomponents.client5:httpclient5:5.3.1",
     ]
+    minio_config = get_minio_config()
 
-    # Danh cho nhung config ma khong phai SparkSession nao cung su dung!
     spark_config = {
-        "fs.s3a.access.key": "minioadmin",
-        "fs.s3a.secret.key": "minioadmin123",
-        "fs.s3a.endpoint": "http://minio:9000",
+        "fs.s3a.access.key": "{}".format(minio_config["minio"].access_key),
+        "fs.s3a.secret.key": "{}".format(minio_config["minio"].secret_key),
+        "fs.s3a.endpoint": "{}".format(minio_config["minio"].endpoint),
         "fs.s3a.path.style.access": "true",
         "fs.s3a.impl": "org.apache.hadoop.fs.s3a.S3AFileSystem",
         # "fs.s3a.connection.ssl.enabled": "false",
@@ -26,7 +28,10 @@ def main():
         "fs.s3a.connection.acquire.timeout": "60000",
         "fs.s3a.multipart.purge.age": "86400000",
         # Thêm dòng này để fix lỗi credential provider
-        "fs.s3a.aws.credentials.provider": "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider"
+        "fs.s3a.aws.credentials.provider": "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider",
+
+        # CHI DU LAI GIA TRI CUOI CUNG
+        "spark.sql.mapKeyDedupPolicy": "LAST_WIN"
     }
 
     spark_connect = SparkConnect(
@@ -58,7 +63,7 @@ def main():
         return  # Thoát hàm main nếu không có file nào
 
     # Chuyển đổi danh sách đường dẫn tương đối thành đường dẫn S3A đầy đủ
-    bucket_name = "hasaki-datalake"  # Tên bucket của bạn
+    bucket_name = "{}".format(minio_config["minio"].bucket_name)
     full_s3a_paths = [f"s3a://{bucket_name}/{path}" for path in new_file_paths]
 
     print(f"Đang đọc dữ liệu từ các đường dẫn MinIO sau: {full_s3a_paths}")
@@ -66,12 +71,57 @@ def main():
     # Read Parquet file from MinIO
     parquet_file = spark.read.parquet(*full_s3a_paths)
 
+
+
+
+
+
+    # Lấy danh sách các cột từ DataFrame gốc (trừ cột event_params sẽ được biến đổi)
+    original_columns_without_event_params = [col_name for col_name in parquet_file.columns if
+                                             col_name != "event_params"]
+
+    # Bước 1: Explode mảng event_params để mỗi cặp key-value trở thành một hàng riêng biệt
+    df_exploded_params = parquet_file.withColumn("event_param", explode(col("event_params")))
+
+    # Bước 2: Trích xuất key và giá trị từ các kiểu dữ liệu khác nhau, sử dụng F.coalesce
+    df_transformed_params = df_exploded_params.withColumn(
+        "param_value",
+        coalesce(
+            col("event_param.value.string_value"),
+            col("event_param.value.int_value").cast(StringType()),
+            col("event_param.value.double_value").cast(StringType()),
+            col("event_param.value.float_value").cast(StringType())
+        )
+    ).select(
+        *original_columns_without_event_params,
+        col("event_param.key").alias("param_key"),
+        col("param_value")
+    )
+
+    # Bước 3: Nhóm lại theo các cột gốc và thu thập các cặp key-value thành một Map
+    df_event_params_map = df_transformed_params.groupBy(*original_columns_without_event_params) \
+        .agg(map_from_entries(collect_list(
+        struct(col("param_key"), col("param_value"))
+    )).alias("event_params_map"))
+
+    # Bước 4: Chuyển đổi Map thành JSON string
+    df_transformed = df_event_params_map.withColumn(
+        "event_params_flat",
+        to_json(col("event_params_map"))
+    )
+
+
+
+
+
+
+
     # Biến đổi dữ liệu cho ClickHouse
-    df_write_database = parquet_file.select(
+    df_write_database = df_transformed.select(
         to_date(col("event_date"), "yyyyMMdd").alias("event_date"),
         col("event_timestamp").cast("timestamp").alias("event_timestamp"),
         col("event_name"),
-        to_json(col("event_params")).alias("event_params"),
+        (col("event_params_flat")).alias("event_params"),
         col("event_previous_timestamp"),
         col("event_value_in_usd").alias("event_value_in_usd"),
         col("event_bundle_sequence_id"),

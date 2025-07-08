@@ -1,0 +1,40 @@
+[2025-07-08T10:07:43.368+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-08T10:07:43.384+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: minio_ga4_new_file_detector.detect_new_ga4_data manual__2025-07-08T09:39:19.707078+00:00 [queued]>
+[2025-07-08T10:07:43.388+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: minio_ga4_new_file_detector.detect_new_ga4_data manual__2025-07-08T09:39:19.707078+00:00 [queued]>
+[2025-07-08T10:07:43.388+0000] {taskinstance.py:2303} INFO - Starting attempt 6 of 7
+[2025-07-08T10:07:43.394+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): detect_new_ga4_data> on 2025-07-08 09:39:19.707078+00:00
+[2025-07-08T10:07:43.398+0000] {standard_task_runner.py:63} INFO - Started process 10452 to run task
+[2025-07-08T10:07:43.423+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'minio_ga4_new_file_detector', 'detect_new_ga4_data', 'manual__2025-07-08T09:39:19.707078+00:00', '--job-id', '200', '--raw', '--subdir', 'DAGS_FOLDER/dag_automatic.py', '--cfg-path', '/tmp/tmpekl9yyi3']
+[2025-07-08T10:07:43.425+0000] {standard_task_runner.py:91} INFO - Job 200: Subtask detect_new_ga4_data
+[2025-07-08T10:07:43.435+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-07-08T10:07:43.457+0000] {task_command.py:426} INFO - Running <TaskInstance: minio_ga4_new_file_detector.detect_new_ga4_data manual__2025-07-08T09:39:19.707078+00:00 [running]> on host 1a66de7e9daf
+[2025-07-08T10:07:43.534+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='minio_ga4_new_file_detector' AIRFLOW_CTX_TASK_ID='detect_new_ga4_data' AIRFLOW_CTX_EXECUTION_DATE='2025-07-08T09:39:19.707078+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-08T09:39:19.707078+00:00'
+[2025-07-08T10:07:43.535+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-08T10:07:43.630+0000] {logging_mixin.py:188} INFO - Bắt đầu kiểm tra các file mới hơn timestamp: 2000-01-01T00:00:00+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 01:05:12.280000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 02:05:13.928000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 03:05:15.659000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 04:05:16.720000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 05:05:14.751000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 06:05:12.940000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 07:05:15.332000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 08:05:25.748000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 09:05:15.445000+00:00
+[2025-07-08T10:07:43.735+0000] {logging_mixin.py:188} INFO - --------------------------------------------------------2025-07-08 10:05:15.007000+00:00
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - 🎉 Tìm thấy 10 file GA4 mới:
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/0.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/1.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/2.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/3.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/4.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/5.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/6.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/7.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/8.parquet
+[2025-07-08T10:07:43.736+0000] {logging_mixin.py:188} INFO - - ga4-data/hasakiwork/analytics_253437596/events/2025/7/8/9.parquet
+[2025-07-08T10:07:43.756+0000] {python.py:237} INFO - Done. Returned value was: True
+[2025-07-08T10:07:43.756+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-08T10:07:43.768+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=minio_ga4_new_file_detector, task_id=detect_new_ga4_data, execution_date=20250708T093919, start_date=20250708T100743, end_date=20250708T100743
+[2025-07-08T10:07:43.812+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-08T10:07:43.833+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-08T10:07:43.833+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
