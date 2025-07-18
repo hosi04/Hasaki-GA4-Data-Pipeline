@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict, Optional
+from typing import Dict
 from dotenv import load_dotenv
 import os
 
@@ -19,7 +19,6 @@ class ClickHouseConfig(DatabaseConfig):
     user: str
     password: str
     database: str
-    # jar_path: Optional[str] = None
     table: str = "ga_raw_events"
 
 
@@ -32,7 +31,6 @@ def get_database_config() -> Dict[str, DatabaseConfig]:
             user = os.getenv("CLICKHOUSE_USER"),
             password = os.getenv("CLICKHOUSE_PASSWORD"),
             database = os.getenv("CLICKHOUSE_DATABASE")
-            # jar_path = os.getenv("MYSQL_JAR_PATH")
         )
     }
     for key,value in config.items():

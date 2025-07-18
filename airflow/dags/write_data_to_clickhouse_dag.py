@@ -25,15 +25,21 @@ def create_minio_client():
         )
         return client
     except Exception as e:
-        print(f"Lỗi khi tạo MinIO client: {e}")
+        print(f"Error while creating MinIO client: {e}")
         raise
 
 def detect_new_ga4_data(**context):
     s3_client = create_minio_client()
 
-    # # Original !!!
-    bucket_name = os.getenv("BUCKET_NAME")
-    ga4_prefix = 'ga4-data/hasakiwork/analytics_253437596/events/2025/4/16/'
+    try:
+        config = Variable.get("etl_config", deserialize_json=True)
+        bucket_name = config["bucket_name"]
+        date_run = config["date_run"]
+        ga4_prefix = f'ga4-data/hasakiwork/analytics_253437596/events/{date_run}/'
+    except:
+        print("Not found config, run with default config")
+        bucket_name = os.getenv("BUCKET_NAME")
+        ga4_prefix = 'ga4-data/hasakiwork/analytics_253437596/events/'
 
     try:
         last_processed_timestamp_str = Variable.get("minio_ga4_last_processed_timestamp")
@@ -43,7 +49,7 @@ def detect_new_ga4_data(**context):
 
     last_processed_dt = datetime.fromisoformat(last_processed_timestamp_str.replace('Z', '+00:00'))
 
-    print(f"Bắt đầu kiểm tra các file mới hơn timestamp: {last_processed_dt.isoformat()}")
+    print(f"Start checking for files newer than timestamp: {last_processed_dt.isoformat()}")
 
     paginator = s3_client.get_paginator('list_objects_v2')
     page_iterator = paginator.paginate(
@@ -70,7 +76,7 @@ def detect_new_ga4_data(**context):
                         print(f"--------------------------------------------------------{file_modified_dt}")
 
     if new_files_found:
-        print(f"🎉 Tìm thấy {len(new_files_found)} file GA4 mới:")
+        print(f"🎉 Found {len(new_files_found)} new GA file:")
         for f_path in new_files_found:
             print(f"- {f_path}")
         
@@ -79,15 +85,8 @@ def detect_new_ga4_data(**context):
         
         return True
     else:
-        print("💤 Không tìm thấy dữ liệu GA4 mới nào.")
+        print("💤 No new GA4 data found.")
         return False
-    
-def reset_last_processed_timestamp(**context):
-
-    last_processed_timestamp_str = "2000-01-01T00:00:00Z"
-    Variable.set("minio_ga4_last_processed_timestamp", last_processed_timestamp_str)
-
-    print("🎉 Reset thanh cong")
 
 def update_last_processed_timestamp(**context):
     detected_latest_timestamp = context['ti'].xcom_pull(task_ids='detect_new_ga4_data', key='detected_latest_timestamp')
@@ -95,16 +94,13 @@ def update_last_processed_timestamp(**context):
     if detected_latest_timestamp:
         Variable.set("minio_ga4_last_processed_timestamp", detected_latest_timestamp)
     else:
-        print("Không có timestamp mới nào để cập nhật (có thể không tìm thấy file mới).")
+        print("No new timestamp to update.")
 
 default_args = {
     'owner': 'airflow',
     'start_date': datetime(2025, 7, 7, 0, 0, 0, tzinfo=timezone.utc),
     'retries': 1,
-    'retry_delay': timedelta(minutes=5),
-    'depends_on_past': False,
-    'email_on_failure': False,
-    'email_on_retry': False,
+    'retry_delay': timedelta(minutes=5)
 }
 
 
@@ -149,14 +145,9 @@ with DAG(
         provide_context=True,
     )
 
-    reset_task = PythonOperator(
-        task_id='reset_variable',
-        python_callable=reset_last_processed_timestamp
-    )
-
     no_new_data_message = BashOperator(
         task_id='no_new_data_message',
-        bash_command='echo "Không có dữ liệu GA4 mới để xử lý trong lần chạy này."',
+        bash_command='echo "No new file GA4 to process in this turn."',
     )
 
     detect_new_data_task >> branch_on_new_data

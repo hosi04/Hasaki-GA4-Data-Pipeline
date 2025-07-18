@@ -48,12 +48,12 @@ def main():
     try:
         new_file_paths = json.loads(new_file_paths_json)
     except json.JSONDecodeError:
-        print(f"Lỗi: Không thể phân tích chuỗi JSON đường dẫn file: {new_file_paths_json}")
+        print(f"Error: Cannot parse JSON string for file path: {new_file_paths_json}")
         spark.stop()
         sys.exit(1)
 
     if not new_file_paths:
-        print("Không có file mới nào được truyền để xử lý. Kết thúc Spark job.")
+        print("No found new file, spark will stop.")
         spark.stop()
         return
 
@@ -255,7 +255,7 @@ def main():
             df_write.spark_write_all_database(df_write_database, mode="append")
 
         except Exception as e:
-            print(f"❌ Lỗi khi đọc file '{file_path}': {str(e)}")
+            print(f"❌ Error while reading file '{file_path}': {str(e)}")
             skipped_files.append(file_path)
             continue
 
