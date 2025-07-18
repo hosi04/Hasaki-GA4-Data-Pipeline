@@ -42,48 +42,13 @@ services:
       - airflow-network
     restart: unless-stopped
 
-  airflow-init:
+  airflow:
     build:
       context: .
       dockerfile: Dockerfile
     depends_on:
       airflow-postgres:
         condition: service_healthy
-    environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
-      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
-      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: 1
-      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
-    user: "50000:50000"
-    volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs #50000:0 devgroup...
-    command: >
-      bash -c "
-        echo 'Initializing Airflow database...' &&
-        airflow db init &&
-        echo 'Creating admin user...' &&
-        airflow users create \
-          --username airflow \
-          --password airflow \
-          --firstname Airflow \
-          --lastname User \
-          --role Admin \
-          --email airflow@example.com || echo 'User already exists' &&
-        echo 'Airflow initialization completed!'
-      "
-    networks:
-      - airflow-network
-
-  airflow-webserver:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on:
-      airflow-init:
-        condition: service_completed_successfully
       clickhouse:
         condition: service_healthy
     environment:
@@ -97,71 +62,38 @@ services:
     user: "50000:50000"
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs #50000:0 devgroup...
-
+      - ./logs:/opt/airflow/logs
       - ./config:/opt/airflow/config
       - ./sparks:/opt/airflow/sparks
       - .env:/opt/airflow/.env:ro
     ports:
       - "8080:8080"
-      - "8001:8001"
-    command: webserver
+    command: >
+      bash -c "
+        echo 'Initializing Airflow...' &&
+        airflow db init &&
+        airflow users create \
+          --username airflow \
+          --password airflow \
+          --firstname Airflow \
+          --lastname User \
+          --role Admin \
+          --email airflow@example.com || echo 'User already exists' &&
+        echo 'Starting Scheduler and Webserver...' &&
+        airflow scheduler & 
+        airflow webserver
+      "
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
       start_period: 120s
-    deploy:
-      resources:
-        limits:
-          memory: 2g
-          cpus: "1.0"
-    networks:
-      - airflow-network
-    restart: unless-stopped
-
-  airflow-scheduler:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on:
-      airflow-init:
-        condition: service_completed_successfully
-      clickhouse:
-        condition: service_healthy
-    environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
-      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
-      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: 1
-      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
-    user: "50000:50000"
-    volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs #50000:0 devgroup...
-
-      - ./config:/opt/airflow/config
-      - ./sparks:/opt/airflow/sparks
-      - .env:/opt/airflow/.env:ro
-    command: scheduler
-    healthcheck:
-      test: ["CMD-SHELL", "airflow jobs check --job-type SchedulerJob --hostname airflow-scheduler || exit 1"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 120s
-    deploy:
-      resources:
-        limits:
-          memory: 2g
-          cpus: "1.0"
     networks:
       - airflow-network
 
   spark-master:
-    image: bitnami/spark:latest
+    image: bitnami/spark:3.5.0
     environment:
       - SPARK_MODE=master
       - SPARK_RPC_AUTHENTICATION_ENABLED=no
@@ -178,43 +110,7 @@ services:
       - airflow-network
 
   spark-worker:
-    image: bitnami/spark:latest
-    environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark-master:7077
-      - SPARK_WORKER_MEMORY=2G
-      - SPARK_WORKER_CORES=2
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-    volumes:
-      - spark-data:/bitnami
-    depends_on:
-      - spark-master
-    networks:
-      - airflow-network
-
-  spark-worker-2:
-    image: bitnami/spark:latest
-    environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark-master:7077
-      - SPARK_WORKER_MEMORY=2G
-      - SPARK_WORKER_CORES=2
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-    volumes:
-      - spark-data:/bitnami
-    depends_on:
-      - spark-master
-    networks:
-      - airflow-network
-
-  spark-worker-3:
-    image: bitnami/spark:latest
+    image: bitnami/spark:3.5.0
     environment:
       - SPARK_MODE=worker
       - SPARK_MASTER_URL=spark://spark-master:7077
@@ -235,7 +131,6 @@ networks:
   airflow-network:
     driver: bridge
   
-
 volumes:
   postgres-data:
   clickhouse-data:

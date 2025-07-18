@@ -30,8 +30,10 @@ def create_minio_client():
 
 def detect_new_ga4_data(**context):
     s3_client = create_minio_client()
+
+    # # Original !!!
     bucket_name = os.getenv("BUCKET_NAME")
-    ga4_prefix = 'ga4-data/hasakiwork/analytics_253437596/events/2025/7/15/'
+    ga4_prefix = 'ga4-data/hasakiwork/analytics_253437596/events/2025/4/16/'
 
     try:
         last_processed_timestamp_str = Variable.get("minio_ga4_last_processed_timestamp")
@@ -129,21 +131,27 @@ with DAG(
         task_id='spark_write_data',
         application="/opt/airflow/sparks/write_data_to_clickhouse.py",
         conn_id='spark-master',
-        env_vars={ 
+        env_vars={
             'PYTHONPATH': '/opt/airflow/'
         },
         packages=(
             "com.clickhouse:clickhouse-jdbc:0.6.4,"
             "org.apache.httpcomponents.client5:httpclient5:5.3.1,"
-            "org.apache.hadoop:hadoop-aws:3.3.5,"
-            "com.amazonaws:aws-java-sdk-bundle:1.11.1026"
+            "org.apache.hadoop:hadoop-aws:3.3.4,"
+            "com.amazonaws:aws-java-sdk-bundle:1.11.837"
         ),
-        application_args=["{{ ti.xcom_pull(task_ids='detect_new_ga4_data', key='new_ga4_file_paths') | tojson }}"],    )
+        application_args=["{{ ti.xcom_pull(task_ids='detect_new_ga4_data', key='new_ga4_file_paths') | tojson }}"]
+    )
 
     update_variable_task = PythonOperator(
         task_id='update_last_processed_timestamp',
         python_callable=update_last_processed_timestamp,
         provide_context=True,
+    )
+
+    reset_task = PythonOperator(
+        task_id='reset_variable',
+        python_callable=reset_last_processed_timestamp
     )
 
     no_new_data_message = BashOperator(

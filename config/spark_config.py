@@ -13,7 +13,7 @@ class SparkConnect():
             num_executors: Optional[int] = 2,
             jar_packages: Optional[List[str]] = None,
             spark_conf: Optional[Dict[str, str]] = None,
-            log_level: str = "WARM"
+            log_level: str = "WARN"
     ):
         self.app_name = app_name
         self.spark = self.create_spark_session(

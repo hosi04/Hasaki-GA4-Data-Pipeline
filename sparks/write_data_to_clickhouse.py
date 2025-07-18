@@ -5,14 +5,13 @@ from config.spark_config import SparkConnect, get_spark_config
 from spark_write_database import SparkWriteDatabase
 import json
 import sys
-from functools import reduce
-from pyspark.sql import DataFrame
 
 def main():
     jar_packages = [
         "com.clickhouse:clickhouse-jdbc:0.6.4",
         "org.apache.httpcomponents.client5:httpclient5:5.3.1",
     ]
+
     minio_config = get_minio_config()
 
     spark_config = {
@@ -204,7 +203,6 @@ def main():
         print(f"Đang xử lý file: {file_path}")
         try:
             df_single_file = spark.read.schema(parquet_schema).parquet(file_path)
-
             df_write_database = df_single_file.select(
                 to_date(col("event_date"), "yyyyMMdd").alias("event_date"),
                 col("event_timestamp").cast("timestamp").alias("event_timestamp"),
@@ -257,7 +255,7 @@ def main():
             df_write.spark_write_all_database(df_write_database, mode="append")
 
         except Exception as e:
-            print(f"❌Lỗi khi đọc file '{file_path}': {str(e)}")
+            print(f"❌ Lỗi khi đọc file '{file_path}': {str(e)}")
             skipped_files.append(file_path)
             continue
 
