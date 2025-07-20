@@ -1,1 +1,0 @@
-[2025-07-04T01:54:03.825+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: connect_to_minio.download_one_file scheduled__2025-07-03T00:00:00+00:00 [queued]> finished (success) although the task says it's queued. (Info: None) Was the task killed externally?
