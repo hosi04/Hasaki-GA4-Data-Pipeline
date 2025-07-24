@@ -1,7 +1,10 @@
 # 📦 GA4 Analytics Pipeline
 
 ## 📝 Project Description
-This project builds a data pipeline to process Google Analytics 4 (GA4) event data stored in MinIO, loads it into ClickHouse, and transforms it into analytical data marts using dbt.
+
+This project was developed during my internship at **Hasaki** and has been successfully deployed to **production**. It implements a data pipeline that uses **Apache Airflow** to schedule and orchestrate the extraction of **Google Analytics 4 (GA4)** event data from **MinIO**. The data is then processed and transformed using **Apache Spark**, and the cleaned, structured output is loaded into **ClickHouse** for high-performance analytics.
+
+After the pipeline was established, a **Data Analyst** joined the project to build **business intelligence (BI)** use cases and reporting workflows on top of the processed data, enabling data-driven decision-making within the company.
 
 ## 🚀 Features
 - Scheduled GA4 data ingestion from MinIO using Apache Airflow
