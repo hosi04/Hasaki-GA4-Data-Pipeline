@@ -11,13 +11,24 @@ This project builds a data pipeline to process Google Analytics 4 (GA4) event da
 - Can be easily extended to support scalable, real-time Business Intelligence (BI) and dashboarding needs.
 
 📂 Project Structure
-├── airflow/
-│   └── dags/
-├── config/
-├── sparks/
-├── .env.example
-├── .gitignore
-├── Dockerfile
-├── docker-compose.yaml
-├── requirements.txt
-└── README.md
+
+project-root/\
+├── airflow/\
+│   └── dags/\
+│       └── write_data_to_clickhouse_dag.py\
+│
+├── config/\
+│   ├── database_config.py\
+│   ├── minio_config.py\
+│   └── spark_config.py\
+│
+├── sparks/\
+│   ├── spark_write_database.py\
+│   └── write_data_to_clickhouse.py\
+│
+├── .env.example\
+├── .gitignore\
+├── Dockerfile\
+├── docker-compose.yaml\
+├── README.md\
+└── requirements.txt\
