@@ -8,4 +8,16 @@ This project builds a data pipeline to process Google Analytics 4 (GA4) event da
 - Reads and flattens nested Parquet files with Apache Spark
 - Writes transformed data into ClickHouse for high-performance querying
 - Builds analytical data marts using dbt, orchestrated via Airflow
-- Supports scalable, real-time reporting and BI use cases
+- Can be easily extended to support scalable, real-time Business Intelligence (BI) and dashboarding needs.
+
+📂 Project Structure
+├── airflow/
+│   └── dags/
+├── config/
+├── sparks/
+├── .env.example
+├── .gitignore
+├── Dockerfile
+├── docker-compose.yaml
+├── requirements.txt
+└── README.md
